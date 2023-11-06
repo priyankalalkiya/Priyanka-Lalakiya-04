@@ -1,15 +1,15 @@
-import logo from './logo.svg';
+
 import './App.css';
 import Navbar from './Components/Navbar';
 import Home from './Components/Home';
-import Projects from './Components/Projects';
+import ProjectCard from './Components/ProjectCard';
 
 function App() {
   return (
     <>
     <Navbar/>
     <Home/>
-    <Projects/>
+    <ProjectCard/>
     </>
   );
 }
