@@ -1,38 +1,199 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+}
+.home{
+  height: 90vh;
+}
+nav {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 20px 80px;
+  box-shadow: 0 5px 15px white;
+}
+#navbar {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+#navbar li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#navbar li a {
+  text-decoration: none;
+  font-weight: 600;
+  color: black;
+  font-size: 1.3rem;
+  transition: 0.3s ease-in-out;
+}
+
+#navbar li a:hover,
+#navbar li .active {
+  color: #008080;
+}
+
+#navbar li a:hover::after,
+#navbar li a.active::after {
+  content: "";
+  width: 60%;
+  height: 2px;
+  background-color: #008080;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+#mobile {
+  display: none;
+}
+
+#mobile i {
+  color: black;
+}
+
+@media screen and (max-width: 600px) {
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: fixed;
+    top: 65px;
+    right: -400px;
+    width: 400px;
+    height: 100vh;
+    background: white;
+    box-shadow: 0 40px 60px white;
+    padding: 40px 0 0 10px;
+    transition: 0.4s ease-in;
+    z-index: 2; /* Add this line to control the z-index */
   }
-  to {
-    transform: rotate(360deg);
+
+  /* Additional styles to ensure the mobile menu appears above other content */
+  #navbar.active {
+    right: 0;
+    background-color: white; /* Add this line to ensure it appears above other content */
+    z-index: 2; /* Add this line to control the z-index */
+  }
+  #mobile {
+    display: block;
+  }
+  #navbar li a {
+    color:black;
+ }
+ #navbar li {
+  margin-bottom: 25px;
+ }
+ #mobile i {
+  font-size: 24px;
+  cursor: pointer;
+ }
+}
+/* home css */
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.image {
+  max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+  height: auto; /* Allow the image to maintain its aspect ratio */
+  display: block; /* Remove any extra spacing below the image */
+}
+.animation {
+  position: relative;
+}
+
+.animation span::before {
+  content: "Web developer";
+  animation: slide 3s infinite;
+}
+
+.animation span::after {
+  content: "";
+  white-space: nowrap;
+  position: absolute;
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 100%;
+}
+
+@keyframes slide {
+  0% {
+    content: "Designer";
+  }
+  50% {
+    content: "Android developer";
   }
 }
+
+.box {
+  display: flex;
+  /* align-items: center; Vertically center the contents */
+ 
+  padding: 200px 200px;
+}
+
+
+  @media screen and (max-width: 600px) {
+    .main {
+      flex-direction: column; /* Stack elements on small screens */
+      padding:50px 20px; /* Adjust padding as needed */
+    }
+  
+    .box{
+      padding: 20px; /* Adjust the padding for the "box" element on small screens */
+    }
+    .box1 {
+      display: flex;
+      padding-left: 0%;
+    }
+    .animation span::before {
+      content: ""; /* Hide the "animation" text by setting content to an empty string */
+    }
+  }
+  
+  /* Remove the padding applied to the image to make it fit better */
+  .image {
+    max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+    height: auto; /* Allow the image to maintain its aspect ratio */
+    display: block; /* Remove any extra spacing below the image */
+  }
+  
+  
+
+.animation{
+font-size: 2rem;
+
+}
+
+.name{
+  font-size: 5rem;
+  color: #008080;
+}
+.heygreet{
+  color: #708090;
+}
+
+/* project css */
+
+.project-title{
+  align-items: center;
+  display:flex ;
+  justify-content: center;
+}
+
