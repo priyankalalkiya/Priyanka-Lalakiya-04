@@ -18,7 +18,7 @@ const ProjectCard = () => {
               <p>{project.description}</p>
             </div>
             <div className="project-btn">
-              <button className="demo teal">{project.demo}</button>
+              <button className="demo teal">Demo</button>
               <button className="teal">Github</button>
             </div>
           </div>
