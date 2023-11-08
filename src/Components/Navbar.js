@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
+import logo from './1logo.jpg'
 const Navbar = () => {
   const [clicked, setclicked] = useState(false)
 
@@ -9,7 +10,7 @@ const Navbar = () => {
   return (
     <> 
    <nav>
-   <img src="" alt="My Logo" />
+   <img src={logo} alt="My Logo" />
     <div>
         <ul id='navbar' className={clicked ? '#navbar active':''}>
             <li><a className='active' href="#">Home</a></li>

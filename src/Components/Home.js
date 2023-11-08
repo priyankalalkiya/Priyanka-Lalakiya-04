@@ -1,5 +1,5 @@
 import React from "react";
-import img from './imgcode.gif';
+import img from './img.gif';
 
 const Home = () => {
   return (

@@ -3,8 +3,12 @@ import ProjectData from "./ProjectData";
 
 const ProjectCard = () => {
   return (
+    <section>
     <div className="container">
-      <h1 className="project-title">Projects</h1>
+    <h1 className="project-title">
+  <span className="project-title-text">Projects</span>
+</h1>
+
       <div className="project-container">
         {ProjectData.map((project, index) => (
           <div className="project-card" key={index}>
@@ -21,6 +25,7 @@ const ProjectCard = () => {
         ))}
       </div>
     </div>
+    </section>
   );
 };
 
