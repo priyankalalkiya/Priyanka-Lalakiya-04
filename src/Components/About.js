@@ -1,5 +1,5 @@
 import React from "react";
-import img from "./img.gif";
+import img from "./my.png";
 
 
 const About = () => {
@@ -29,15 +29,7 @@ const About = () => {
             might even be mistakenly inappropriate. Using Lorem Ipsum allows us
             to SEE the design without being distracted by readable or
             unrealistic text.
-            of the text, it's meaningless. The original text talks about the
-            pain and love involved in the pursuit of pleasure or something like
-            that. The reason we use Lorem Ipsum is simple. If we used real text,
-            it would possibly distract from the DESIGN of a page or indeed,
-            might even be mistakenly inappropriate. Using Lorem Ipsum allows us
-            to SEE the design without being distracted by readable or of the text, it's meaningless. The original text talks about the
-            pain and love involved in the pursuit of pleasure or something like
-            that. The reason we use Lorem Ipsum is simple. If we used real text,
-            it would possibly distract from the DESIGN of a page or indeed,
+           
             might even be mistakenly inappropriate. Using Lorem Ipsum allows us
             to SEE the design without being distracted by readable or
           </p>

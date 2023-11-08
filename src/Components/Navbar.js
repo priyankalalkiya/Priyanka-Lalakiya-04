@@ -10,7 +10,9 @@ const Navbar = () => {
   return (
     <> 
    <nav>
-   <img src={logo} alt="My Logo" />
+   < div>
+   <img  className='circle' src={logo} alt="My Logo" />
+   </div>
     <div>
         <ul id='navbar' className={clicked ? '#navbar active':''}>
             <li><a className='active' href="#">Home</a></li>

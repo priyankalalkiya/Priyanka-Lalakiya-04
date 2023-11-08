@@ -1,5 +1,4 @@
-
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
 /* ... (previous CSS rules) ... */
 
 /* Add a fade-in animation when the page loads */
@@ -9,10 +8,10 @@ body {
 
 @keyframes fadeIn {
   0% {
-      opacity: 0;
+    opacity: 0;
   }
   100% {
-      opacity: 1;
+    opacity: 1;
   }
 }
 
@@ -22,27 +21,26 @@ section {
   animation: slideIn 1s ease-in;
 }
 
-@keyframes slideIn{
+@keyframes slideIn {
   0% {
-      transform: translateY(100px);
-      opacity: 0;
+    transform: translateY(100px);
+    opacity: 0;
   }
   100% {
-      transform: translateY(0);
-      opacity: 1;
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
 /* ... (previous CSS rules) ... */
 
-
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
-.home{
+.home {
   height: 90vh;
 }
 nav {
@@ -52,13 +50,12 @@ nav {
   background-color: white;
   padding: 20px 80px;
   box-shadow: 0 5px 15px white;
-  background-color:rgb(219, 203, 203);
+  background-color: rgb(219, 203, 203);
 }
 #navbar {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 #navbar li {
@@ -126,15 +123,15 @@ nav {
     display: block;
   }
   #navbar li a {
-    color:black;
- }
- #navbar li {
-  margin-bottom: 25px;
- }
- #mobile i {
-  font-size: 24px;
-  cursor: pointer;
- }
+    color: black;
+  }
+  #navbar li {
+    margin-bottom: 25px;
+  }
+  #mobile i {
+    font-size: 24px;
+    cursor: pointer;
+  }
 }
 /* home css */
 .main {
@@ -180,55 +177,50 @@ nav {
 .box {
   display: flex;
   /* align-items: center; Vertically center the contents */
- 
-  padding: 200px  0px 100px 200px;  
+
+  padding: 200px 0px 100px 200px;
   /* top, right, bottom, and left  */
 }
-.box1{
- padding: 100px;
-
+.box1 {
+  padding: 100px;
 }
 
-
-  @media screen and (max-width: 600px) {
-    .main {
-      flex-direction: column; /* Stack elements on small screens */
-      padding:50px 20px; /* Adjust padding as needed */
-    }
-  
-    .box{
-      padding: 20px; /* Adjust the padding for the "box" element on small screens */
-    }
-    .box1 {
-      display: flex;
-      padding-left: 0%;
-    }
-    .animation span::before {
-      content: ""; /* Hide the "animation" text by setting content to an empty string */
-    }
+@media screen and (max-width: 600px) {
+  .main {
+    flex-direction: column; /* Stack elements on small screens */
+    padding: 50px 20px; /* Adjust padding as needed */
   }
-  
-  /* Remove the padding applied to the image to make it fit better */
-  .image {
-    max-width: 100%; /* Ensure the image doesn't exceed its container's width */
-    height: auto; /* Allow the image to maintain its aspect ratio */
-    display: block; /* Remove any extra spacing below the image */
+
+  .box {
+    padding: 20px; /* Adjust the padding for the "box" element on small screens */
   }
-  
-  
-
-.animation{
-font-size: 2rem;
-
+  .box1 {
+    display: flex;
+    padding-left: 0%;
+  }
+  .animation span::before {
+    content: ""; /* Hide the "animation" text by setting content to an empty string */
+  }
 }
 
-.name{
+/* Remove the padding applied to the image to make it fit better */
+.image {
+  max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+  height: auto; /* Allow the image to maintain its aspect ratio */
+  display: block; /* Remove any extra spacing below the image */
+}
+
+.animation {
+  font-size: 2rem;
+}
+
+.name {
   font-size: 5rem;
   color: #008080;
 }
-.heygreet{
-font-size: 1.2rem;
-font-weight: 900;
+.heygreet {
+  font-size: 1.2rem;
+  font-weight: 900;
 }
 
 /* project css */
@@ -247,10 +239,7 @@ font-weight: 900;
   padding: 0 5px; /* Optional padding for spacing between text and underline */
 }
 
-
-
 .project-container {
-
   max-width: 1100px;
   margin: auto;
   display: grid;
@@ -260,7 +249,6 @@ font-weight: 900;
 }
 
 .project-card {
-
   padding: 1rem;
   position: relative;
   overflow: hidden;
@@ -272,19 +260,18 @@ font-weight: 900;
 
 .project-card img {
   width: 100%;
-  
-} 
+}
 
 .project-card .project-description {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  background:black;
+  background: black;
   color: #fff;
   transform: translateY(100%);
   transition: transform 0.3s; /* Add z-index transition */
-  
+
   border-bottom-left-radius: 10px; /* Add border radius to description */
   border-bottom-right-radius: 10px; /* Add border radius to description */
   box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); /* Add box shadow to description */
@@ -318,10 +305,7 @@ font-weight: 900;
     margin: auto;
     grid-template-columns: 1fr;
   }
-
- 
 }
-
 
 /* abou css */
 
@@ -343,12 +327,14 @@ font-weight: 900;
 }
 
 .boxabout0 img {
-  max-width: 100%;
   height: auto;
+  padding-left: 100px;
+  padding-bottom: 100px;
 }
 
 .boxabout1 {
   flex: 1;
+  padding-bottom: 100px;
 }
 
 p {
@@ -356,12 +342,10 @@ p {
   padding-right: 200px;
 }
 
-/* Media queries for responsiveness */
 @media (min-width: 768px) {
   .content-container {
     align-items: center;
   }
- 
 }
 
 @media screen and (max-width: 600px) {
@@ -369,4 +353,8 @@ p {
     padding-left: 15px;
     padding-right: 20px;
   }
+}
+
+.circle{
+  border-radius: 50%;
 }
