@@ -135,7 +135,7 @@ nav {
 
 .animation span::before {
   content: "Web developer";
-  animation: slide 3s infinite ease-in;
+  animation: slide 4s infinite ease-in;
 }
 
 .animation span::after {
