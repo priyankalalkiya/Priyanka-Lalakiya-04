@@ -18,11 +18,27 @@ nav {
   align-items: center;
   justify-content: space-between;
   background-color: white ;
- box-shadow:0 40px 60px white;
-  padding: 20px 80px;
+  box-shadow:0 40px 60px white;
+  padding: 20px 160px;
   box-shadow: 0 5px 15px white;
-  height: 90px;
+  height: 80px;
 }
+.logo-container {
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
+
+.logo-container img {
+  margin-right: 20px; /* Add some space between the logo and the text */
+}
+.sticky-nav {
+  position: sticky;
+  top: 0; /* Adjust this value to control when the navbar becomes sticky, e.g., "top: 50px;" */
+  z-index: 100; /* Add a z-index to ensure it appears above other content */
+  background-color: #fff; /* Optional: Set a background color for the navbar */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for separation */
+}
+
 #navbar {
   display: flex;
   justify-content: center;
@@ -123,7 +139,7 @@ nav {
 
 .animation span::before {
   content: "Web developer";
-  animation: slide 3s infinite;
+  animation: slide 4s infinite;
 }
 
 .animation span::after {
@@ -144,12 +160,28 @@ nav {
     content: "Android developer";
   }
 }
+.content-text{
+  width: 700px;
+  text-align: justify;
+  margin-top: 20px;
+}
+.content-text h4 {
+  text-align: inherit;
+}
+.resume-btn{
+  color: white;
+  background-color:  #008080;
+  margin-top: 30px;
+  padding: 10px 20px; 
+  cursor: pointer;
+  border-radius: 10px;
+}
 
 .box {
   display: flex;
   /* align-items: center; Vertically center the contents */
 
-  padding: 200px 0px 100px 200px;
+  padding: 150px 0px 100px 200px;
   /* top, right, bottom, and left  */
 }
 .box1 {
@@ -169,8 +201,14 @@ nav {
     display: flex;
     padding-left: 0%;
   }
-  .animation span::before {
-    content: ""; /* Hide the "animation" text by setting content to an empty string */
+  
+  .content-text{
+    width: 400px;
+    text-align: justify;
+    margin-top: 20px;
+  }
+  .content-text h4 {
+    text-align: inherit;
   }
 }
 
@@ -186,12 +224,12 @@ nav {
 }
 
 .name {
-  font-size: 5rem;
+  font-size: 4rem;
   color: #008080;
 }
 .heygreet {
   font-size: 1.2rem;
-  font-weight: 900;
+  font-weight: bold;
 }
 
 
@@ -203,13 +241,13 @@ nav {
   text-align: center;
   font-size: 2rem;
   font-weight: bold;
-  padding-bottom: 20px;
+  /* padding-bottom: 20px; */
 }
 
 .project-title-text {
   border-bottom: 3px solid #008080; /* Add an underline with the color of your choice */
   display: inline; /* Make the underline only for the text, not full width */
-  padding: 0 5px; /* Optional padding for spacing between text and underline */
+  padding: 0 10px; /* Optional padding for spacing between text and underline */
 }
 
 .project-container {
