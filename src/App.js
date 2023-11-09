@@ -10,8 +10,8 @@ function App() {
    <>
     <Navbar/>
     <Home/>
-    <About/>
-    <ProjectCard/>
+    {/* <About/>
+    <ProjectCard/> */}
   </>
   );
 }
