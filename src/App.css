@@ -1,8 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
-/* ... (previous CSS rules) ... */
-
-/* Add a fade-in animation when the page loads */
-
 
 * {
   margin: 0;
@@ -139,7 +135,7 @@ nav {
 
 .animation span::before {
   content: "Web developer";
-  animation: slide 4s infinite;
+  animation: slide 3s infinite ease-in;
 }
 
 .animation span::after {
