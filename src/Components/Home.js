@@ -17,7 +17,7 @@ const Home = () => {
         <div className="box">
           <div className="text">
             <h3 className="heygreet">Hey, I am </h3>
-            <h1 data-text="Priyanka" className="name project-title-text">Priyanka Lalakiya </h1>
+            <h1 data-text="Priyanka" className="name">Priyanka Lalakiya </h1>
             <h3 className="animation">
               <span></span>
             </h3>
