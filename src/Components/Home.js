@@ -23,8 +23,8 @@ const Home = () => {
               <span></span>
             </h3>
             <div  className="content-text">
-            <h4> hr Starting the process of developing an API-driven React website opens up a world of infinite possibilities for improving your website's functionality and providing users with real-time data and information.",
-        demo:"url.com</h4></div>
+            <p> hr Starting the process of developing an API-driven React website opens up a world of infinite possibilities for improving your website's functionality and providing users with real-time data and information.",
+        demo:"url.com</p></div>
             <button className="resume-btn" >Downlode Resume <i class="fa-solid fa-download"></i></button>
           </div>
         </div>

@@ -13,8 +13,9 @@ function App() {
       <Navbar />
       <Home />
       <About />
+      <Skills skills={skills} /> 
       <ProjectCard />
-      <Skills skills={skills} /> {/* Pass the skillsData as a prop to Skills component */}
+     
     </>
   );
 }

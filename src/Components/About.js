@@ -23,7 +23,7 @@ const About = () => {
               <img className="myimage" src={img} alt="Profile" />
             </div>
             <div className="boxabout1">
-              <p>
+              <p className="about-text">
                 "It was originally taken from a Latin text written by a Roman
                 Scholar, Sceptic and Philosopher by the name of Marcus Tullius
                 Cicero, who influenced the Latin language greatly. The "filler" text
