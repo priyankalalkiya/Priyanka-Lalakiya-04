@@ -38,15 +38,15 @@ margin-top: 12px;
   }
 `;
 
-export const Desc = styled.div`
-    font-size: 18px;
-    text-align: center;
-    max-width: 600px;
-    color: ${({ theme }) => theme.text_secondary};
-    @media (max-width: 768px) {
-        font-size: 16px;
-    }
-`;
+// export const Desc = styled.div`
+//     font-size: 18px;
+//     text-align: center;
+//     max-width: 600px;
+//     color: ${({ theme }) => theme.text_secondary};
+//     @media (max-width: 768px) {
+//         font-size: 16px;
+//     }
+// `;
 
 const SkillsContainer = styled.div`
   width: 100%;
@@ -62,8 +62,8 @@ const Skill = styled.div`
   width: 100%;
   max-width: 500px;
   background: ${({ theme }) => theme.card};
-  border: 0.1px solid #854CE6;
-  box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
+  border: 1px solid black;
+  box-shadow: 0 40px 60px white;
   border-radius: 16px;
   padding: 18px 36px;
   background-color:white;
@@ -99,7 +99,7 @@ const SkillItem = styled.div`
   font-size: 16px;
   font-weight: 400;
   color: ${({ theme }) => theme.text_primary + 80};
-  border: 1px solid ${({ theme }) => theme.text_primary + 80};
+  border: 1px solid black;
   border-radius: 12px;
   padding: 12px 16px;
   display: flex;
@@ -130,7 +130,7 @@ const Skills = () => {
     backgroundPosition: 'center',
   };
   return (
-    <body>
+  
     <Container id="skills" style={backgroundStyle}>
       <Wrapper>
         <h1 className='title-text'>Skills</h1>
@@ -154,7 +154,7 @@ const Skills = () => {
         </SkillsContainer>
       </Wrapper>
     </Container>
-    </body>
+
   )
 }
 

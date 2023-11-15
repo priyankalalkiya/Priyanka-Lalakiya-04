@@ -164,6 +164,9 @@ nav {
   top: 0;
   left: 100%;
 }
+.image{
+  padding-left: 100px;
+}
 
 @keyframes slide {
   0% {
@@ -174,7 +177,7 @@ nav {
   }
 }
 .content-text{
-  width: 600px;
+  width: 550px;
   text-align: justify;
   margin-top: 20px;
   line-height: 1.8;
@@ -222,6 +225,10 @@ nav {
   }
 .content-text{
   width: auto;
+}
+
+.image{
+  padding-left: 100px;
 }
   .myimage{
     height: 500px;
