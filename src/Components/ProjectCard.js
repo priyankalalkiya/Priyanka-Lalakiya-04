@@ -11,13 +11,13 @@ const ProjectCard = () => {
   };
 
   return (
+  
     <section style={backgroundStyle} className=".projects">
     <div className="container">
     <h1 className="p-title">
   <span className="p-title-text">Projects</span>
-</h1>
-
-      <div className="project-container">
+   </h1>
+<div className="project-container">
         {ProjectData.map((project, index) => (
           <div className="project-card" key={index}>
             <img src={project.imgsrc} alt="img" />
@@ -35,6 +35,7 @@ const ProjectCard = () => {
       </div>
     </div>
     </section>
+
   );
 };
 

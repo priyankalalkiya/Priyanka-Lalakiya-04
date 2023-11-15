@@ -55,6 +55,7 @@ const SkillsContainer = styled.div`
   margin-top: 30px;
   gap: 30px;
   justify-content: center;
+ 
 `
 
 const Skill = styled.div`
@@ -65,6 +66,7 @@ const Skill = styled.div`
   box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
   border-radius: 16px;
   padding: 18px 36px;
+  background-color:white;
   @media (max-width: 768px) {
     max-width: 400px;
     padding: 10px 36px;
@@ -128,6 +130,7 @@ const Skills = () => {
     backgroundPosition: 'center',
   };
   return (
+    <body>
     <Container id="skills" style={backgroundStyle}>
       <Wrapper>
         <h1 className='title-text'>Skills</h1>
@@ -151,6 +154,7 @@ const Skills = () => {
         </SkillsContainer>
       </Wrapper>
     </Container>
+    </body>
   )
 }
 

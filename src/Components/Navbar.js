@@ -10,6 +10,7 @@ const Navbar = () => {
   };
 
   return (
+    <body>
     <nav className='sticky-nav'>
       <div>
         <div className='logo-container'>
@@ -30,6 +31,7 @@ const Navbar = () => {
         <i className={clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
       </div>
     </nav>
+    </body>
   );
 };
 

@@ -12,14 +12,15 @@ const About = () => {
 
   return (
     <>
+ 
       <section className="about" style={backgroundStyle}>
-        <h1 className="title">
-          <span className="title-text">About Me</span>
+        <h1 className="p-title">
+          <span className="p-title-text">About Me</span>
         </h1>
         <div className="about-container">
           <div className="content-container">
             <div className="boxabout0">
-              <img src={img} alt="Profile" />
+              <img className="myimage" src={img} alt="Profile" />
             </div>
             <div className="boxabout1">
               <p>
@@ -41,6 +42,7 @@ const About = () => {
           </div>
         </div>
       </section>
+  
     </>
   );
 };

@@ -1,14 +1,17 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
 }
-.home {
-  height: 90vh;
+
+body {
+  overflow-x: hidden;
 }
+
+
 nav {
   display: flex;
   align-items: center;
@@ -35,6 +38,11 @@ nav {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for separation */
 }
 
+.circle{
+  height: 44px;
+  width: 44px;
+}
+
 #navbar {
   display: flex;
   justify-content: center;
@@ -43,7 +51,7 @@ nav {
 
 #navbar li {
   list-style: none;
-  padding: 0 20px;
+  padding: 0px 20px;
   position: relative;
 }
 
@@ -60,16 +68,16 @@ nav {
   color: #008080;
 }
 
-#navbar li a:hover::after,
+/* #navbar li a:hover::after,
 #navbar li a.active::after {
   content: "";
-  width: 60%;
+  width: 50%;
   height: 2px;
   background-color: #008080;
   position: absolute;
-  bottom: -4px;
+  bottom: -2px;
   left: 20px;
-}
+} */
 #mobile {
   display: none;
 }
@@ -97,6 +105,7 @@ nav {
   }
   nav {
     padding: 20px;
+   
   }
 
   /* Additional styles to ensure the mobile menu appears above other content */
@@ -119,19 +128,24 @@ nav {
     cursor: pointer;
   }
 }
+
 /* home css */
 .main {
+  padding-top: 150px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+
 }
 
-.image {
-  max-width: 100%; /* Ensure the image doesn't exceed its container's width */
-  height: auto; /* Allow the image to maintain its aspect ratio */
-  display: block; /* Remove any extra spacing below the image */
+.home{
+  height: 80vh;
 }
+
 .animation {
   position: relative;
 }
@@ -160,9 +174,10 @@ nav {
   }
 }
 .content-text{
-  width: 700px;
+  width: 600px;
   text-align: justify;
   margin-top: 20px;
+  line-height: 1.8;
 }
 .content-text h4 {
   text-align: inherit;
@@ -176,46 +191,11 @@ nav {
   border-radius: 10px;
 }
 
-.box {
-  display: flex;
-  /* align-items: center; Vertically center the contents */
 
-  padding: 150px 0px 100px 200px;
-  /* top, right, bottom, and left  */
-}
-.box1 {
-  padding-top: 100px;
-}
-
-@media screen and (max-width: 600px) {
-  .main {
-    flex-direction: column; /* Stack elements on small screens */
-    padding: 50px 20px; /* Adjust padding as needed */
-  }
-
-  .box {
-    padding: 20px; /* Adjust the padding for the "box" element on small screens */
-  }
-
-  
-  .content-text{
-    width: 400px;
-    text-align: justify;
-    margin-top: 20px;
-  }
-  .content-text h4 {
-    text-align: inherit;
-  }
-  .home{
-    height: 130vh;
-  }
-}
-
-/* Remove the padding applied to the image to make it fit better */
 .image {
-  max-width: 100%; /* Ensure the image doesn't exceed its container's width */
-  height: auto; /* Allow the image to maintain its aspect ratio */
-  display: block; /* Remove any extra spacing below the image */
+  max-width: 100%; 
+  height: auto; 
+
 }
 
 .animation {
@@ -232,6 +212,47 @@ nav {
 }
 
 
+@media screen and (max-width: 650px) {
+  .home{
+    display: flex;
+    justify-content: center;
+   
+    text-align: center;
+
+  }
+.content-text{
+  width: auto;
+}
+  .myimage{
+    height: 500px;
+    width: 400px;
+  
+  }
+
+  .box {
+    padding: 20px; /* Adjust the padding for the "box" element on small screens */
+  }
+ 
+  .main {
+    padding-top: 50px;
+  }
+ 
+  .content-text{
+    width: 430px;
+    text-align: justify;
+    margin-top: 20px;
+  }
+
+  .content-text h4 {
+    text-align: inherit;
+  }
+
+  .home{
+    height: 130vh;
+  }
+
+  
+}
 
 
 
@@ -263,9 +284,6 @@ nav {
   width: 90vh;
 }
 
-.about{
-  height: 90vh;
-}
 
 .boxabout1 p {
   font-size: 16px;
@@ -281,12 +299,12 @@ nav {
 
 }
 
-.title{
+/* .title{
   text-align: center;
   font-size: 2rem;
   font-weight: bold;
   padding-top: 50px;
-}
+} */
 
 .title-text {
   border-bottom: 3px solid #008080; 
@@ -297,7 +315,8 @@ nav {
 @media screen and (max-width: 600px){
 
   .boxabout1 , .boxabout1{
-    padding: 0px; /* Adjust the value as needed */
+    padding: 0px;
+   
   }
 
 }
@@ -453,9 +472,6 @@ padding: 20px;
   border-radius: 10px;
 }
 
-.container {
-  width: 100vw;
-}
 
 @media screen and (max-width: 600px) {
   .project-container {
@@ -464,9 +480,7 @@ padding: 20px;
     grid-template-columns: 1fr;
   }
 
-  .container {
-    margin-top: 80%;
-  }
+
 }
 
 
@@ -526,9 +540,7 @@ padding: 20px;
   border-radius: 10px;
 }
 
-.container {
-  width: 100vw;
-}
+
 
 @media screen and (max-width: 600px) {
   .project-container {
@@ -537,9 +549,7 @@ padding: 20px;
     grid-template-columns: 1fr;
   }
 
-  .container {
-    margin-top: 80%;
-  }
+  
 }
 
 /* Remove the hover effect */
