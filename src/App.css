@@ -12,6 +12,10 @@ body {
   overflow-x: hidden;
 }
 
+.backgroundStyle{
+  background-image: url(Images/bg1.avif);
+  background-size: 'cover',
+}
 
 nav {
   display: flex;
@@ -223,19 +227,13 @@ nav {
 
 
 @media screen and (max-width: 650px) {
-  .home{
-    display: flex;
-    justify-content: center;
-   
-    text-align: center;
 
-  }
 .content-text{
-  width: auto;
+  width: 100px;
 }
 
 .image{
-  padding-left: 100px;
+  padding-left: 50px;
 }
   .myimage{
     height: 500px;
@@ -248,24 +246,31 @@ nav {
   }
  
   .main {
-    padding-top: 50px;
+    padding-top: 100px;
+    padding-left: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
   }
  
-  .content-text{
-    width: 430px;
-    text-align: justify;
-    margin-top: 20px;
-  }
+ 
 
-  .content-text h4 {
+  .content-text p {
     text-align: inherit;
+    width: 350px;
+    padding-left: 30px;
   }
 
   .home{
     height: 130vh;
   }
 
-  
+  .btnbox{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
 }
 
 
@@ -438,6 +443,7 @@ nav {
   }
 
   .container {
-    margin-top: 80%;
+    margin-top: 10%;
   }
 }
+

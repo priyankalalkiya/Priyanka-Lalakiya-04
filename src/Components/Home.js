@@ -1,19 +1,10 @@
 import React from "react";
-import img from './img.gif';
-import backgroundImg from './bg1.avif'; // Import the background image
+import img from '../Images/img.gif';
 
 const Home = () => {
-  // Define the style for the background image
-  const backgroundStyle = {
-    backgroundImage: `url(${backgroundImg})`,
-    backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'center',
-  };
-
   return (
-    <body>
-    <section className="home" style={backgroundStyle}>
+    
+    <section className="home backgroundStyle">
       <div className="main">
         <div className="box">
           <div className="text">
@@ -22,11 +13,12 @@ const Home = () => {
             <h3 className="animation">
               <span></span>
             </h3>
-            <div  className="content-text">
+            <div className="content-text">
             <p> hr Starting the process of developing an API-driven React website opens up a world of infinite possibilities for improving your website's functionality and providing users with real-time data and information.",
         demo:"url.com</p></div>
+        <div className="btnbox">
             <button className="resume-btn" >Downlode Resume <i class="fa-solid fa-download"></i></button>
-          </div>
+          </div> </div>
         </div>
         <div className="box1">
           <div className="image">
@@ -35,7 +27,7 @@ const Home = () => {
         </div>
       </div>
     </section>
-    </body>
+   
   );
 };
 

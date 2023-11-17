@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import logo from './1logo.jpg';
+import logo from '../Images/1logo.jpg';
 
 const Navbar = () => {
   const [clicked, setClicked] = useState(false);

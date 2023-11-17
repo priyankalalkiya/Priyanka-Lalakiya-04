@@ -1,19 +1,13 @@
 import React from "react";
-import img from "./my.png";
-import backgroundImg from './bg1.avif';
+import img from "../Images/my.png";
 
 const About = () => {
-  const backgroundStyle = {
-    backgroundImage: `url(${backgroundImg})`,
-    backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'center',
-  };
+
 
   return (
     <>
  
-      <section className="about" style={backgroundStyle}>
+      <section className="about backgroundStyle">
         <h1 className="p-title">
           <span className="p-title-text">About Me</span>
         </h1>

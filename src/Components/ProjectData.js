@@ -1,7 +1,7 @@
-import pro1 from "./download.jpg"
-import pro2 from "./pro4.png"
-import pro0 from "./pro1.png"
-import pro5  from "./pro5.png"
+import pro1 from "../Images/download.jpg"
+import pro2 from "../Images/pro4.png"
+import pro0 from "../Images/pro1.png"
+import pro5  from "../Images/pro5.png"
 const ProjectData=[
     {
         imgsrc:pro1,

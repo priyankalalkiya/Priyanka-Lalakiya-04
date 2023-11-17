@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import { skills } from './SkillsData'
-import backgroundImg from './bg1.avif';
 
 const Container = styled.div`
 display: flex;
@@ -59,7 +58,7 @@ const SkillsContainer = styled.div`
 `
 
 const Skill = styled.div`
-  // width: 100%;
+   width: 100%;
   max-width: 500px;
   border: 1px solid black;
   box-shadow: 0 40px 60px white;
@@ -122,17 +121,12 @@ const SkillImage = styled.img`
 
 
 const Skills = () => {
-  const backgroundStyle = {
-    backgroundImage: `url(${backgroundImg})`,
-    backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'center',
-  };
+  
   return (
   
-    <Container id="skills" style={backgroundStyle}>
+    <Container id="skills" className='backgroundStyle'>
       <Wrapper>
-        <h1 className='title-text'>Skills</h1>
+        <h1 className='title-text'> My Skills</h1>
         {/* <Desc>Here are some of my skills on which I have been working on for the past 2 years.
         </Desc> */}
         <SkillsContainer>

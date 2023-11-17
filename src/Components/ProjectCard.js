@@ -1,21 +1,14 @@
 import React from "react";
 import ProjectData from "./ProjectData";
-import backgroundImg from './bg1.avif';
+
 
 const ProjectCard = () => {
-  const backgroundStyle = {
-    backgroundImage: `url(${backgroundImg})`,
-    backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'center',
-  };
-
   return (
   
-    <section style={backgroundStyle} className=".projects">
+    <section  className="backgroundStyle">
     <div className="container">
     <h1 className="p-title">
-  <span className="p-title-text">Projects</span>
+  <span className="p-title-text">My Projects</span>
    </h1>
 <div className="project-container">
         {ProjectData.map((project, index) => (
