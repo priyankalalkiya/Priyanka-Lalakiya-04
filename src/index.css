@@ -1,8 +1,6 @@
 
 
 body{
-  /* background-image: url(Images/bg1.avif); */
-  background-color: black;
-  background-size: 'cover';
-  color:white;
+  background-image: url(Images/bg1.avif);
+  background-size: 'cover',
 }
