@@ -53,7 +53,7 @@ const skills = [
     ],
   },
     {
-      title: "Web Development",
+      title: "Web Languages",
       skills: [
         {
           name: "HTML",

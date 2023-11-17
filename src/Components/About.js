@@ -2,11 +2,14 @@ import React from "react";
 import img from "../Images/my.png";
 
 const About = () => {
+
+
   return (
     <>
+ 
       <section className="about backgroundStyle reveal">
         <h1 className="p-title">
-          <span className="underline">About Me</span>
+          <span className="p-title-text">About Me</span>
         </h1>
         <div className="about-container">
           <div className="content-container">
@@ -15,19 +18,23 @@ const About = () => {
             </div>
             <div className="boxabout1">
               <p className="about-text">
-                I'm Mann, an enthusiastic web developer with a passion for
-                turning concepts into digital reality. My journey in web
-                development has been marked by a relentless pursuit of creative
-                solutions and a dedication to crafting engaging web experiences.
-                I thrive on the ever-evolving nature of this field, where each
-                project offers a chance to learn and innovate. I'm driven by the
-                desire to create seamless online interactions, bridging the gap
-                between businesses and their audiences.
+                "I am <span className="highlight">Priyanka</span> from a Latin text written by a Roman
+                Scholar, Sceptic and Philosopher by the name of Marcus Tullius
+                Cicero, who influenced the Latin language greatly. The "filler" text
+                we know today has been altered over the years. In fact, "Lorem"
+                isn't actually a Latin word. It is suggewe used real text,
+                it would possibly distract from the DESIGLatin word. It is suggested that the reason that
+                the text starts with "Lorem" is because there was a page breakething like
+                that. The reason we use Lorem Ipsum is simple. If we used real text,
+                it would possibly distN of a s us
+                to SEE the design without being distracted by readable or unrealistic text.
+                . "
               </p>
             </div>
           </div>
         </div>
       </section>
+  
     </>
   );
 };

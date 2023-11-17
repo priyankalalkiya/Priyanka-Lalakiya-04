@@ -94,6 +94,11 @@ nav {
   color: black;
 }
 
+@media screen and (max-width: 1000px){
+  .circle{
+    margin-left: 10px;
+  }
+}
 @media screen and (max-width: 600px) {
   #navbar {
     display: flex;
@@ -116,6 +121,9 @@ nav {
     padding: 20px;
    
   }
+  .circle{
+    margin-left: 10px;
+  }
 
   #navbar.active {
     right: 0;
@@ -134,6 +142,11 @@ nav {
   #mobile i {
     font-size: 24px;
     cursor: pointer;
+  }
+}
+@media screen and (max-width: 450px){
+  .circle{
+    margin-left: 1px;
   }
 }
 
@@ -363,7 +376,7 @@ nav {
 
 @media screen and (max-width: 600px){
 
-  .boxabout1 , .boxabout1{
+  .boxabout0, .boxabout1{
     padding: 0px;
    
   }
