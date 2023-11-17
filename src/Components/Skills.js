@@ -53,15 +53,14 @@ const SkillsContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   margin-top: 30px;
-  gap: 30px;
+  gap: 50px;
   justify-content: center;
  
 `
 
 const Skill = styled.div`
-  width: 100%;
+  // width: 100%;
   max-width: 500px;
-  background: ${({ theme }) => theme.card};
   border: 1px solid black;
   box-shadow: 0 40px 60px white;
   border-radius: 16px;

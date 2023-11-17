@@ -17,11 +17,12 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: white ;
+  background: transparent; 
   box-shadow:0 40px 60px white;
   padding: 20px 160px;
   box-shadow: 0 5px 15px white;
   height: 80px;
+
 }
 .logo-container {
   display: flex;
@@ -35,8 +36,9 @@ nav {
 
 
 .sticky-nav {
-  position: sticky;
+  position: fixed;
   top: 0; 
+  width: 100%;
   z-index: 100; 
   background-color: #fff; 
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
@@ -102,7 +104,8 @@ nav {
     right: -400px;
     width: 400px;
     height: 100vh;
-    background: white;
+    background: transparent; /* Set background to transparent */
+
     box-shadow: 0 40px 60px white;
     padding: 40px 0 0 10px;
     transition: 0.4s ease-in;
@@ -135,7 +138,7 @@ nav {
 
 /* home css */
 .main {
-  padding-top: 150px;
+  padding-top: 200px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -147,7 +150,7 @@ nav {
 }
 
 .home{
-  height: 80vh;
+  height: 93vh;
 }
 
 .animation {
@@ -275,23 +278,28 @@ nav {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
   flex-wrap: wrap;
 }
 .boxabout0 {
-  padding: 20px; /* Adjust the value as needed */
+  padding: 10px; 
 }
 
 .boxabout1 {
-  padding: 60px;
+  padding: 55px;
 }
 
 .boxabout0 img {
   height: auto;
+  border-radius: 20px;
 }
 .boxabout1{
   text-align: justify;
-  width: 90vh;
+  width: 80vh;
+  height: 100%;
+}
+
+.highlight{
+  color: #008080;
 }
 
 .about-text{
@@ -344,6 +352,8 @@ nav {
   font-weight: bold;
   padding: 50px;
 }
+
+
 
 .project-title {
   text-align: center;

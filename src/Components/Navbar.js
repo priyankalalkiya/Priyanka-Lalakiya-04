@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <body>
-    <nav className='sticky-nav'>
+    <nav className={`sticky-nav ${clicked ? 'active' : ''}`}>
  
         <div className='logo-container'>
           <img className='circle' src={logo} alt='My Logo' />
