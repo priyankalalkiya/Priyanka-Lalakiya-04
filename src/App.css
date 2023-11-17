@@ -7,10 +7,10 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-
+/* 
 body {
   overflow-x: hidden;
-}
+} */
 
 
 
@@ -94,11 +94,7 @@ nav {
   color: black;
 }
 
-@media screen and (max-width: 1000px){
-  .circle{
-    margin-left: 10px;
-  }
-}
+
 @media screen and (max-width: 600px) {
   #navbar {
     display: flex;
@@ -117,6 +113,7 @@ nav {
     transition: 0.4s ease-in;
     z-index: 2; 
   }
+
   nav {
     padding: 20px;
    
@@ -147,6 +144,11 @@ nav {
 @media screen and (max-width: 450px){
   .circle{
     margin-left: 1px;
+  }
+  .sticky-nav {
+  
+    width: 400px;
+   
   }
 }
 
@@ -301,6 +303,11 @@ nav {
     padding-left: 10px;
   }
 
+  .myimage{
+    height: 400px;
+    width: 300px;
+  
+  }
 
  
 }
