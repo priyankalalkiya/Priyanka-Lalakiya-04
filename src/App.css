@@ -270,6 +270,27 @@ nav {
   }
 }
 
+@media screen and (max-width: 450px){
+
+  
+  .image{
+    padding-left: 10px;
+  }
+   
+  .main {
+    padding-left: 20px;
+
+  }
+
+  .content-text p {
+    text-align: inherit;
+    width: 250px;
+    padding-left: 10px;
+  }
+
+
+ 
+}
 
 
 /* abou css */
@@ -315,7 +336,7 @@ nav {
 
 .boxabout1 p {
   font-size: 16px;
-  line-height: 1.9;
+  line-height: 1.8;
   margin: 20px;
   text-align: inherit;
 }
@@ -323,6 +344,7 @@ nav {
 
 .about-container {
   text-align: center;
+  /* padding: 10px; */
 
 }
 
