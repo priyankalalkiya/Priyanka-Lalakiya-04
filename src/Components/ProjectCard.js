@@ -5,7 +5,7 @@ import ProjectData from "./ProjectData";
 const ProjectCard = () => {
   return (
   
-    <section  className="backgroundStyle">
+    <section  className="backgroundStyle reveal">
     <div className="container">
     <h1 className="p-title">
   <span className="p-title-text">My Projects</span>

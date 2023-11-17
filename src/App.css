@@ -12,10 +12,7 @@ body {
   overflow-x: hidden;
 }
 
-.backgroundStyle{
-  background-image: url(Images/bg1.avif);
-  background-size: 'cover',
-}
+
 
 nav {
   display: flex;
@@ -305,6 +302,9 @@ nav {
 
 .highlight{
   color: #008080;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration:underline;
 }
 
 .about-text{
@@ -315,7 +315,7 @@ nav {
 
 .boxabout1 p {
   font-size: 16px;
-  line-height: 1.8;
+  line-height: 1.9;
   margin: 20px;
   text-align: inherit;
 }
@@ -323,7 +323,6 @@ nav {
 
 .about-container {
   text-align: center;
-  /* padding: 10px; */
 
 }
 
@@ -447,3 +446,15 @@ nav {
   }
 }
 
+/* scroll  */
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease ;
+}
+
+.reveal.active{
+  transform: translateY(0px);
+  opacity: 1;
+}

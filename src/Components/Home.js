@@ -1,10 +1,36 @@
-import React from "react";
+import React, { useEffect } from "react";
 import img from '../Images/img.gif';
 
+
 const Home = () => {
+  useEffect(() => {
+    const revealElements = document.querySelectorAll('.reveal');
+
+    const handleScroll = () => {
+      for (let i = 0; i < revealElements.length; i++) {
+        const windowHeight = window.innerHeight;
+        const revealTop = revealElements[i].getBoundingClientRect().top;
+        const revealPoint = 100;
+
+        if (revealTop < windowHeight - revealPoint) {
+          revealElements[i].classList.add('active');
+        } else {
+          revealElements[i].classList.remove('active');
+        }
+      }
+    };
+
+    // Attach the scroll event listener when the component mounts
+    window.addEventListener('scroll', handleScroll);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []); 
   return (
     
-    <section className="home backgroundStyle">
+    <section className="home backgroundStyle reveal">
       <div className="main">
         <div className="box">
           <div className="text">
