@@ -95,7 +95,7 @@ nav {
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   #navbar {
     display: flex;
     flex-direction: column;
@@ -104,10 +104,11 @@ nav {
     position: fixed;
     top: 65px;
     right: -400px;
-    width: 100%;
+    width: 400px;
     height: 100vh;
     background: transparent; /* Set background to transparent */
-     box-shadow: 0 40px 60px white;
+
+    box-shadow: 0 40px 60px white;
     padding: 40px 0 0 10px;
     transition: 0.4s ease-in;
     z-index: 2; 
@@ -138,9 +139,19 @@ nav {
   #mobile i {
     font-size: 24px;
     cursor: pointer;
+    padding-right: 50px;
   }
 }
-
+@media screen and (max-width: 450px){
+  .circle{
+    margin-left: 1px;
+  }
+  .sticky-nav {
+  
+    width: 400px;
+   
+  }
+}
 
 /* home css */
 .main {
