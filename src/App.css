@@ -76,7 +76,7 @@ nav {
   color: #008080;
 }
 
-/* #navbar li a:hover::after,
+#navbar li a:hover::after,
 #navbar li a.active::after {
   content: "";
   width: 50%;
@@ -85,7 +85,7 @@ nav {
   position: absolute;
   bottom: -2px;
   left: 20px;
-} */
+}
 #mobile {
   display: none;
 }
