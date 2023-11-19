@@ -12,10 +12,10 @@ function App() {
     <>
       <Navbar />
       <Home />
-      <About />
+      {/* <About />
       <Skills skills={skills} /> 
       <ProjectCard />
-     
+      */}
     </>
   );
 }
