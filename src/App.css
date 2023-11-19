@@ -104,7 +104,7 @@ nav {
     position: fixed;
     top: 65px;
     right: -400px;
-    width: 758px;
+    width: 100%;
     height: 100vh;
     background: transparent; /* Set background to transparent */
      box-shadow: 0 40px 60px white;
