@@ -30,10 +30,10 @@ const Home = () => {
   }, []); 
   return (
     
-    <section className="home backgroundStyle reveal">
+    <section className="backgroundStyle reveal">
       <div className="main">
         <div className="box">
-          <div className="text">
+         
             <h3 className="heygreet">Hey, I am </h3>
             <h1 data-text="Priyanka" className="name style">Priyanka Lalakiya </h1>
             <h3 className="animation">
@@ -47,11 +47,11 @@ const Home = () => {
           </div> </div>
         </div>
         <div className="box1">
-          <div className="image">
-            <img src={img} alt="" />
-          </div>
+      
+            <img  className="image" src={img} alt="" />
+    
         </div>
-      </div>
+    
     </section>
    
   );

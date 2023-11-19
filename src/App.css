@@ -188,9 +188,6 @@ nav {
   top: 0;
   left: 100%;
 }
-.image{
-  padding-left: 150px;
-}
 
 @keyframes slide {
   0% {
@@ -219,11 +216,7 @@ nav {
 }
 
 
-.image {
-  max-width: 100%; 
-  height: auto; 
 
-}
 
 .animation {
   font-size: 2rem;
@@ -238,6 +231,10 @@ nav {
   font-weight: bold;
 }
 
+.image{
+  height: 250px;
+  width: 330px;
+}
 
 @media screen and (max-width: 650px) {
 
@@ -245,14 +242,8 @@ nav {
   width: 100px;
 }
 
-.image{
-  padding-left: 50px;
-}
-  .myimage{
-    height: 500px;
-    width: 400px;
-  
-  }
+
+
 
   .box {
     padding: 20px; /* Adjust the padding for the "box" element on small screens */
@@ -288,7 +279,14 @@ nav {
 
 @media screen and (max-width: 450px){
 
-  
+  .main {
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+ 
   .image{
     padding-left: 10px;
   }
@@ -304,11 +302,7 @@ nav {
     padding-left: 10px;
   }
 
-  .myimage{
-    height: 400px;
-    width: 300px;
-  
-  }
+ 
 
  
 }
@@ -387,6 +381,11 @@ nav {
   .boxabout0, .boxabout1{
     padding: 0px;
    
+  }
+  .myimage{
+    height: 400px;
+    width: 300px;
+  
   }
 
 }
