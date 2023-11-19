@@ -6,6 +6,7 @@ import ProjectCard from './Components/ProjectCard';
 import About from './Components/About';
 import Skills from './Components/Skills';
 import { skills } from './Components/SkillsData';
+import Contectline from './Components/Contectline';
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
       <Navbar />
       <Home />
       <About />
-      {/* <Skills skills={skills} />  */}
+      <Skills skills={skills} /> 
+      {/* <Contectline/> */}
       {/* <ProjectCard /> */}
      
     </>

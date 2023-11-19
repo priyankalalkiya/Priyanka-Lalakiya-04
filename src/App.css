@@ -198,7 +198,7 @@ nav {
   }
 }
 .content-text{
-  width: 550px;
+  width: 80vh;
   text-align: justify;
   margin-top: 20px;
   line-height: 1.8;
@@ -231,19 +231,13 @@ nav {
   font-weight: bold;
 }
 
-.image{
-  height: 250px;
-  width: 330px;
-}
+
 
 @media screen and (max-width: 650px) {
 
 .content-text{
   width: 100px;
 }
-
-
-
 
   .box {
     padding: 20px; /* Adjust the padding for the "box" element on small screens */
@@ -288,7 +282,8 @@ nav {
   }
  
   .image{
-    padding-left: 10px;
+    height: 250px;
+    width: 300px;
   }
    
   .main {
@@ -298,7 +293,7 @@ nav {
 
   .content-text p {
     text-align: inherit;
-    width: 250px;
+    width: 270px;
     padding-left: 10px;
   }
 
@@ -378,13 +373,21 @@ nav {
 
 @media screen and (max-width: 600px){
 
-  .boxabout0, .boxabout1{
+  .boxabout0,  .boxabout1{
+
     padding: 0px;
    
   }
+ 
   .myimage{
     height: 400px;
-    width: 300px;
+    width: 270px;
+  
+  }
+
+  .boxabout1 p{
+
+    width:270px;
   
   }
 
@@ -421,7 +424,8 @@ nav {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 50px;
-  padding-bottom: 3rem;
+
+
 }
 
 .project-card {
@@ -478,14 +482,33 @@ nav {
 
 @media screen and (max-width: 600px) {
   .project-container {
-    max-width: 400px;
-    margin: auto;
+    max-width: 300px;
     grid-template-columns: 1fr;
+    margin: auto;
   }
 
-  .container {
-    margin-top: 10%;
+ 
+  .project-title{
+    font-size: 20px;
   }
+
+  .project-description{
+
+    height: 180px;
+    font-size: 14px;
+  }
+.project-card{
+  padding: 0px;
+}
+  
+.teal {
+
+  padding: 7px 5px;
+  font-size: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+
+}
 }
 
 /* scroll  */
@@ -500,3 +523,38 @@ nav {
   transform: translateY(0px);
   opacity: 1;
 }
+
+/* .line_container{
+  margin:10px;
+  display: flex;
+  justify-content: space-between;
+
+flex-direction: row;
+flex-wrap: wrap;
+background-color: black;
+color: white;
+height: 100px;
+
+}
+
+.line_container .text1 p{
+ font-size: 30px;
+ margin:30px 50px;
+}
+
+.line_container  .text2 p{
+  font-size: 30px;
+  margin:30px 80px;
+ }
+
+
+ @media screen and (max-width: 600px) {
+ 
+.line_container{
+  
+flex-direction: column;
+gap: 10px;
+height: 150px;
+width: 400px;
+}
+ } */

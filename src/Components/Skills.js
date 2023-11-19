@@ -61,7 +61,6 @@ const Skill = styled.div`
    width: 100%;
   max-width: 500px;
   border: 1px solid black;
-  box-shadow: 0 40px 60px white;
   border-radius: 16px;
   padding: 18px 36px;
   background-color:white;
@@ -70,8 +69,8 @@ const Skill = styled.div`
     padding: 10px 36px;
   }
   @media (max-width: 500px) {
-    max-width: 330px;
-    padding: 10px 36px;
+    max-width: 300px;
+    padding: 10px 30px;
   }
 
 
@@ -83,6 +82,10 @@ const SkillTitle = styled.h2`
   color: ${({ theme }) => theme.text_secondary};
   margin-bottom: 20px;
   text-align: center;
+  @media (max-width: 500px) {
+    font-size: 20px;
+  }
+
 `
 
 const SkillList = styled.div`
@@ -106,11 +109,11 @@ const SkillItem = styled.div`
   gap: 8px;
   @media (max-width: 768px) {
     font-size: 14px;
-    padding: 8px 12px;
+    padding: 8px 10px;
   }
   @media (max-width: 500px) {
     font-size: 14px;
-    padding: 6px 12px;
+    padding: 6px 10px;
   }
 `
 
