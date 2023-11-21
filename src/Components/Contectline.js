@@ -4,9 +4,9 @@ const Contectline = () => {
   return (
     <div className='line_container'>
    <div className='text1'>
-   <p>I am avilable for work..</p>
+   <p>I'm avilable for work<span className='effect'>_</span></p>
    </div>
-   <div className='text2 text-title'>
+   <div className='text2 underline-title-text '>
    <p>Contect Me</p>
 </div>
     </div>

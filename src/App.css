@@ -70,7 +70,7 @@ nav {
 #navbar li a.active::after {
   content: "";
   width: 50%;
-  height: 2px;
+  height: 2.5px;
   background-color: #008080;
   position: absolute;
   bottom: -2px;
@@ -421,18 +421,12 @@ nav {
 
 .project-card .project-btn {
   display: flex;
-  justify-content: space-between;
+
 }
 
-.teal {
-  background-color: #008080;
-  color: white;
-  padding: 10px 15px;
-  cursor: pointer;
-  font-weight: bold;
-  margin-top: 20px;
-  border-radius: 10px;
-}
+
+
+
 
 
 @media screen and (max-width: 600px) {
@@ -441,7 +435,6 @@ nav {
     grid-template-columns: 1fr;
     grid-gap: 0px;
     margin-bottom: 20px;
-  
   }
 
   .project-title {
@@ -457,12 +450,19 @@ nav {
     margin-bottom: 20px;
   }
 
-  .teal {
-    padding: 7px 5px;
-    font-size: 10px;
-    margin-top: 5px;
+  .project-btn img {
+    height: 25px;
+    width: 25px;
+    box-shadow:  3px 2px 5px 5px rgba(35, 34, 34, 0.2);
     border-radius: 5px;
   }
+
+  .teal {
+
+    margin: 0px;
+    margin-left: auto;
+  }
+  
 }
 
 /* scroll  */
@@ -478,37 +478,95 @@ nav {
   opacity: 1;
 }
 
-/* .line_container{
-  margin:10px;
+.line_container {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 800px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: black;
+  color: white;
+  height: 100px;
+}
+
+.line_container .text1 p {
+  font-size: 30px;
+}
+
+.line_container .text2 p {
+  font-size: 20px;
+}
+
+.underline-title-text :hover{
+  border-bottom: solid #008080 ;
+  display: inline;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.effect {
+  display: inline-block;
+  animation: flash 1s infinite;
+}
+
+@keyframes flash {
+  50% {
+    opacity: 0;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .line_container {
+    margin-top: 40px;
+    flex-direction: column;
+    gap: 8px;
+    height: 130px;
+    width: 330px;
+  }
+  .line_container .text1 p {
+    font-size: 22px;
+  }
+  .line_container .text2 p{
+    font-size: 15px;
+  }
+}
+
+
+/* .projectImage{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-radius: 3px;
+} */
+
+
+
+
+
+.project-card .project-btn {
   display: flex;
   justify-content: space-between;
-
-flex-direction: row;
-flex-wrap: wrap;
-background-color: black;
-color: white;
-height: 100px;
-
+  align-items: center;
+  padding-top: 10px;
 }
 
-.line_container .text1 p{
- font-size: 30px;
- margin:30px 50px;
+.project-btn img {
+  height: 40px;
+  width: 40px;
+  box-shadow:  3px 2px 5px 5px rgba(35, 34, 34, 0.2);
+  border-radius: 5px;
 }
 
-.line_container  .text2 p{
-  font-size: 30px;
-  margin:30px 80px;
- }
+.teal {
 
-
- @media screen and (max-width: 600px) {
- 
-.line_container{
-  
-flex-direction: column;
-gap: 10px;
-height: 150px;
-width: 400px;
+  margin: 10px;
+  margin-left: auto;
 }
- } */
+
+.project-btn .projectImage{
+  margin-left: 20px;
+}
