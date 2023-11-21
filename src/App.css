@@ -1,51 +1,41 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
-/* 
-body {
-  overflow-x: hidden;
-} */
-
-
 
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: transparent; 
-  box-shadow:0 40px 60px white;
+  background: transparent;
+  box-shadow: 0 40px 60px white;
   padding: 20px 160px;
   box-shadow: 0 5px 15px white;
   height: 80px;
-
 }
 .logo-container {
   display: flex;
-  align-items: center; 
+  align-items: center;
 }
 
 .logo-container img {
-  margin-right: 10px; 
-
+  margin-right: 10px;
 }
-
 
 .sticky-nav {
   position: fixed;
-  top: 0; 
+  top: 0;
   width: 100%;
-  z-index: 100; 
-  background-color: #fff; 
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  z-index: 100;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.circle{
+.circle {
   height: 55px;
   width: 55px;
   margin-left: 50px;
@@ -94,7 +84,6 @@ nav {
   color: black;
 }
 
-
 @media screen and (max-width: 600px) {
   #navbar {
     display: flex;
@@ -106,26 +95,24 @@ nav {
     right: -400px;
     width: 400px;
     height: 100vh;
-    background: transparent; /* Set background to transparent */
-
+    background: transparent;
     box-shadow: 0 40px 60px white;
     padding: 40px 0 0 10px;
     transition: 0.4s ease-in;
-    z-index: 2; 
+    z-index: 2;
   }
 
   nav {
     padding: 20px;
-   
   }
-  .circle{
+  .circle {
     margin-left: 10px;
   }
 
   #navbar.active {
     right: 0;
-    background-color: white; 
-    z-index: 2; 
+    background-color: white;
+    z-index: 2;
   }
   #mobile {
     display: block;
@@ -142,14 +129,22 @@ nav {
     padding-right: 50px;
   }
 }
-@media screen and (max-width: 450px){
-  .circle{
+@media screen and (max-width: 450px) {
+  .circle {
     margin-left: 1px;
   }
   .sticky-nav {
-  
     width: 400px;
-   
+  }
+
+  #navbar li {
+    padding: 0px 70px;
+  }
+  #navbar li a:hover::after,
+  #navbar li a.active::after {
+    width: 30%;
+
+    left: 70px;
   }
 }
 
@@ -163,10 +158,9 @@ nav {
   justify-content: center;
   align-items: center;
   padding-left: 100px;
-
 }
 
-.home{
+.home {
   height: 93vh;
 }
 
@@ -197,7 +191,7 @@ nav {
     content: "Android developer";
   }
 }
-.content-text{
+.content-text {
   width: 80vh;
   text-align: justify;
   margin-top: 20px;
@@ -206,17 +200,14 @@ nav {
 .content-text h4 {
   text-align: inherit;
 }
-.resume-btn{
+.resume-btn {
   color: white;
-  background-color:  #008080;
+  background-color: #008080;
   margin-top: 30px;
-  padding: 10px 20px; 
+  padding: 10px 20px;
   cursor: pointer;
   border-radius: 10px;
 }
-
-
-
 
 .animation {
   font-size: 2rem;
@@ -231,18 +222,15 @@ nav {
   font-weight: bold;
 }
 
-
-
 @media screen and (max-width: 650px) {
-
-.content-text{
-  width: 100px;
-}
+  .content-text {
+    width: 100px;
+  }
 
   .box {
-    padding: 20px; /* Adjust the padding for the "box" element on small screens */
+    padding: 20px;
   }
- 
+
   .main {
     padding-top: 100px;
     padding-left: 50px;
@@ -251,8 +239,6 @@ nav {
     text-align: center;
     align-items: center;
   }
- 
- 
 
   .content-text p {
     text-align: inherit;
@@ -260,19 +246,18 @@ nav {
     padding-left: 30px;
   }
 
-  .home{
+  .home {
     height: 130vh;
   }
 
-  .btnbox{
+  .btnbox {
     display: flex;
     justify-content: center;
     align-content: center;
   }
 }
 
-@media screen and (max-width: 450px){
-
+@media screen and (max-width: 450px) {
   .main {
     padding-top: 100px;
     display: flex;
@@ -280,15 +265,14 @@ nav {
     text-align: center;
     align-items: center;
   }
- 
-  .image{
+
+  .image {
     height: 250px;
     width: 300px;
   }
-   
+
   .main {
     padding-left: 20px;
-
   }
 
   .content-text p {
@@ -296,15 +280,9 @@ nav {
     width: 270px;
     padding-left: 10px;
   }
-
- 
-
- 
 }
 
-
 /* abou css */
-
 
 .content-container {
   display: flex;
@@ -314,7 +292,7 @@ nav {
   flex-wrap: wrap;
 }
 .boxabout0 {
-  padding: 10px; 
+  padding: 10px;
 }
 
 .boxabout1 {
@@ -325,20 +303,20 @@ nav {
   height: auto;
   border-radius: 20px;
 }
-.boxabout1{
+.boxabout1 {
   text-align: justify;
   width: 80vh;
   height: 100%;
 }
 
-.highlight{
+.highlight {
   color: #008080;
   font-size: 20px;
   font-weight: 600;
-  text-decoration:underline;
+  text-decoration: underline;
 }
 
-.about-text{
+.about-text {
   line-height: 1.8;
   font-size: larger;
   font-style: bold;
@@ -347,50 +325,34 @@ nav {
 .boxabout1 p {
   font-size: 16px;
   line-height: 1.8;
-  margin: 20px;
+  margin-left: 30px;
   text-align: inherit;
 }
 
-
 .about-container {
   text-align: center;
-  /* padding: 10px; */
-
 }
-
-/* .title{
-  text-align: center;
-  font-size: 2rem;
-  font-weight: bold;
-  padding-top: 50px;
-} */
 
 .title-text {
-  border-bottom: 3px solid #008080; 
-  display: inline; 
-  padding: 10px; 
+  border-bottom: 3px solid #008080;
+  display: inline;
+  padding: 10px;
 }
 
-@media screen and (max-width: 600px){
-
-  .boxabout0,  .boxabout1{
-
+@media screen and (max-width: 600px) {
+  .boxabout0,
+  .boxabout1 {
     padding: 0px;
-   
   }
- 
-  .myimage{
+
+  .myimage {
     height: 400px;
     width: 270px;
-  
   }
 
-  .boxabout1 p{
-
-    width:270px;
-  
+  .boxabout1 p {
+    width: 270px;
   }
-
 }
 
 /* project css */
@@ -401,8 +363,6 @@ nav {
   font-weight: bold;
   padding: 50px;
 }
-
-
 
 .project-title {
   text-align: center;
@@ -424,8 +384,6 @@ nav {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 50px;
-
-
 }
 
 .project-card {
@@ -443,7 +401,7 @@ nav {
 
 .project-card .project-description {
   position: absolute;
-  bottom: 0; /* Change from top to bottom */
+  bottom: 0;
   left: 0;
   width: 100%;
   color: black;
@@ -476,50 +434,46 @@ nav {
   border-radius: 10px;
 }
 
-.container {
-  width: 100vw;
-}
 
 @media screen and (max-width: 600px) {
   .project-container {
-    max-width: 300px;
+    max-width: 280px;
     grid-template-columns: 1fr;
-    margin: auto;
-  }
-
- 
-  .project-title{
-    font-size: 20px;
-  }
-
-  .project-description{
-
-    height: 180px;
-    font-size: 14px;
-  }
-.project-card{
-  padding: 0px;
-}
+    grid-gap: 0px;
+    margin-bottom: 20px;
   
-.teal {
+  }
 
-  padding: 7px 5px;
-  font-size: 10px;
-  margin-top: 5px;
-  border-radius: 5px;
+  .project-title {
+    font-size: 17px;
+  }
 
-}
+  .project-description {
+    height: 160px;
+    font-size: 12px;
+  }
+  .project-card {
+    padding: 0px;
+    margin-bottom: 20px;
+  }
+
+  .teal {
+    padding: 7px 5px;
+    font-size: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+  }
 }
 
 /* scroll  */
-.reveal{
+.reveal {
   position: relative;
   transform: translateY(150px);
   opacity: 0;
-  transition: all 2s ease ;
+  transition: all 2s ease;
 }
 
-.reveal.active{
+.reveal.active {
   transform: translateY(0px);
   opacity: 1;
 }

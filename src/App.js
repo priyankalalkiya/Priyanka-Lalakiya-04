@@ -16,7 +16,7 @@ function App() {
       <About />
       <Skills skills={skills} /> 
       {/* <Contectline/> */}
-      {/* <ProjectCard /> */}
+      <ProjectCard />
      
     </>
   );
