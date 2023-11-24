@@ -21,11 +21,11 @@ const Navbar = () => {
       </div>
       <div>
         <ul id='navbar' className={clicked ? 'active' : ''}>
-          <li><a className='active' href='#'>Home</a></li>
-          <li><a href='#'>About</a></li>
-          <li><a href='#'>Skills</a></li>
-          <li><a href='#'>Project</a></li>
-          <li><a href='#'>Contact</a></li>
+          <li><a className='active' href='##'>Home</a></li>
+          <li><a href='##'>About</a></li>
+          <li><a href='##'>Skills</a></li>
+          <li><a href='##'>Project</a></li>
+          <li><a href='##'>Contact</a></li>
         </ul>
       </div>
       <div id='mobile' onClick={handleClick}>
