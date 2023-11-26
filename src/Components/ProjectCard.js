@@ -7,7 +7,7 @@ import github from "../Images/githublogo.png";
 const ProjectCard = () => {
   return (
     <section className="backgroundStyle reveal">
-      <div className="container">
+      <div className="container cnt">
         <h1 className="p-title">
           <span className="p-title-text">My Projects</span>
         </h1>
