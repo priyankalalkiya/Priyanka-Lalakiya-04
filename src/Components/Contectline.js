@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Reveal from "./Reveal";
 const Contectline = () => {
   return (
     <div className='line_container'>

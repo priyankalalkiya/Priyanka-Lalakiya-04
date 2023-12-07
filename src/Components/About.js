@@ -1,12 +1,12 @@
 import React from "react";
 import img from "../Images/my.png";
-
+import Reveal from "./Reveal";
 const About = () => {
 
 
   return (
     <>
- 
+    <Reveal>
       <section className="about backgroundStyle reveal">
         <h1 className="p-title">
           <span className="p-title-text">About Me</span>
@@ -34,7 +34,7 @@ const About = () => {
           </div>
         </div>
       </section>
-  
+      </Reveal>
     </>
   );
 };

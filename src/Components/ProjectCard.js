@@ -1,11 +1,13 @@
 import React from "react";
 import ProjectData from "./ProjectData";
 import github from "../Images/githublogo.png";
-
+import Reveal from "./Reveal";
 
 
 const ProjectCard = () => {
   return (
+
+    <Reveal>
     <section className="backgroundStyle reveal">
       <div className="container cnt">
         <h1 className="p-title">
@@ -37,6 +39,8 @@ const ProjectCard = () => {
         </div>
       </div>
     </section>
+    </Reveal>
+  
   );
 };
 
