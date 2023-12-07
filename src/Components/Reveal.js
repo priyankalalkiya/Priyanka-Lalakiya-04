@@ -1,37 +1,38 @@
-// Reveal.js
-import React, { useEffect } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 const Reveal = ({ children }) => {
+  const revealRef = useRef();
+  const [isVisible, setIsVisible] = useState(false);
+
   useEffect(() => {
-    const revealElements = document.querySelectorAll(".reveal");
-    const windowHeight = window.innerHeight;
-
-    const handleScroll = () => {
-      for (let i = 0; i < revealElements.length; i++) {
-        const revealTop = revealElements[i].getBoundingClientRect().top;
-        const revealPoint = 150;
-
-        if (revealTop < windowHeight - 150 || revealTop >= 0) {
-          revealElements[i].classList.add("active");
-        } else {
-          revealElements[i].classList.remove("active");
-        }
-      }
+    const options = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.5,
     };
 
-    // Call handleScroll once to apply initial state
-    handleScroll();
+    const handleIntersect = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      });
+    };
 
-    // Attach the scroll event listener when the component mounts
-    window.addEventListener("scroll", handleScroll);
+    const observer = new IntersectionObserver(handleIntersect, options);
 
-    // Clean up the event listener when the component unmounts
+    observer.observe(revealRef.current);
+
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      observer.disconnect();
     };
   }, []);
 
-  return <div className="reveal active">{children}</div>;
+  return (
+    <div ref={revealRef} className={`reveal ${isVisible ? "active" : ""}`}>
+      {children}
+    </div>
+  );
 };
 
 export default Reveal;

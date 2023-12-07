@@ -5,7 +5,7 @@ import Reveal from "./Reveal";
 const Home = () => {
   return (
     <Reveal>
-      <section className="backgroundStyle reveal">
+      <section className="backgroundStyle">
         <div className="home">
           <div className="main">
             <div className="box">

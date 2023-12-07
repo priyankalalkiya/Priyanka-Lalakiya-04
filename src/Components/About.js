@@ -7,7 +7,7 @@ const About = () => {
   return (
     <>
     <Reveal>
-      <section className="about backgroundStyle reveal">
+      <section className="about backgroundStyle">
         <h1 className="p-title">
           <span className="p-title-text">About Me</span>
         </h1>

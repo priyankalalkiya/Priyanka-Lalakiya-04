@@ -8,7 +8,7 @@ const ProjectCard = () => {
   return (
 
     <Reveal>
-    <section className="backgroundStyle reveal">
+    <section className="backgroundStyle">
       <div className="container cnt">
         <h1 className="p-title">
           <span className="p-title-text">My Projects</span>
