@@ -7,7 +7,7 @@ import About from './Components/About';
 import Skills from './Components/Skills';
 import { skills } from './Components/SkillsData';
 import Contectline from './Components/Contectline';
-import Contact from './Components/Contect';
+import Contact from './Components/Contect/index';
 
 function App() {
   return (
