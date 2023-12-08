@@ -38,15 +38,9 @@ const Contact = () => {
 
   return (
     <>
+    <div className="touch">
+      <h1>Get In Touch</h1></div>
       <div className="container-contact">
-        <h1>Get In Touch</h1>
-        <p>
-          Starting the process of developing an API-driven React website opens
-          up a world of infinite possibilities for improving your website's
-          functionality and providing users with real-time data and
-          information.", demo:"url.com
-        </p>
-        <br></br>
         <div className="contact-form">
       
           <form ref={refForm} onSubmit={sendEmail}>
@@ -62,7 +56,7 @@ const Contact = () => {
               </li>
             </ul>
             <li>
-              <input type="submit" className="flat-button" value="Send" />
+              <input type="submit" className="flat-button" value="Send Me A Message" />
             </li>
           </form>
         </div>

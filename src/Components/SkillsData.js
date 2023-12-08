@@ -142,26 +142,26 @@ const skills = [
         },
       ],
     },
-    {
-      title: "Android",
-      skills: [
+    // {
+    //   title: "Android",
+    //   skills: [
        
-        {
-          name: "Kotlin",
-          image:
-           kotlinImage
-        },
-        {
-          name: "XML",
-          image:xmlImage
-        },
-        {
-          name: "Android Studio",
-          image:
-          androidImage
-        },
-      ],
-    },
+    //     {
+    //       name: "Kotlin",
+    //       image:
+    //        kotlinImage
+    //     },
+    //     {
+    //       name: "XML",
+    //       image:xmlImage
+    //     },
+    //     {
+    //       name: "Android Studio",
+    //       image:
+    //       androidImage
+    //     },
+    //   ],
+    // },
  
     
   ];
