@@ -8,6 +8,7 @@ import Skills from './Components/Skills';
 import { skills } from './Components/SkillsData';
 import Contectline from './Components/Contectline';
 import Contact from './Components/Contact';  // Fix the typo in the filename
+import Footer from './Components/Footer';
 
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
       <Contectline/>
       <ProjectCard />
  <Contact/>
-     
+     <Footer/>
     </>
   );
 }

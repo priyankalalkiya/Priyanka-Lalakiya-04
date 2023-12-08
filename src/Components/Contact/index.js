@@ -56,7 +56,7 @@ const Contact = () => {
               </li>
             </ul>
             <li>
-              <input type="submit" className="flat-button" value="Send Me A Message" />
+              <input type="submit" className="flat-button" value="Send Message" />
             </li>
           </form>
         </div>
