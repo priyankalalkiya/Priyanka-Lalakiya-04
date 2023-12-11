@@ -319,7 +319,7 @@ nav {
     margin-top: 8px;
   }
   .content-text p {
-    font-size: 10px;
+    font-size: 12px;
   }
   .animation span {
     font-size: 1.2rem;
@@ -357,7 +357,7 @@ nav {
     margin-top: 8px;
   }
   .content-text p {
-    font-size: 10px;
+    font-size: 12px;
   }
   .animation span {
     font-size: 1.2rem;
@@ -414,11 +414,7 @@ nav {
   text-decoration: underline;
 }
 
-.about-text {
-  line-height: 1.8;
-  font-size: larger;
-  font-style: bold;
-}
+
 
 .boxabout1 p {
   font-size: 16px;
@@ -495,7 +491,7 @@ nav {
   .boxabout1 p {
     margin-left: 0px;
     padding: 0px 5px 0px 5px;
-    font-size: 15px;
+    font-size: 10px;
   }
 }
 
@@ -507,7 +503,7 @@ nav {
     width: 280px;
   }
   .boxabout1 p {
-    font-size: 13px;
+    font-size: 12px;
   }
 }
 
@@ -535,6 +531,7 @@ nav {
   border-bottom: 3px solid #008080;
   display: inline;
   padding: 10px;
+
 }
 
 .project-container {
@@ -583,6 +580,17 @@ nav {
   display: flex;
 }
 
+.project-btn img {
+  height: 40px;
+  width: 40px;
+  box-shadow: 3px 2px 5px 5px rgba(35, 34, 34, 0.2);
+  border-radius: 5px;
+}
+
+.project-btn .projectImage {
+  margin-left: 20px;
+}
+
 @media screen and (max-width:1024px){
   .project-container {
     grid-gap: 35px;
@@ -608,19 +616,26 @@ nav {
     padding: 0px;
     margin-bottom: 20px;
   }
-  .project-btn img {
+  .project-btn > img {
     height: 25px;
     width: 25px;
     box-shadow: 3px 2px 5px 5px rgba(35, 34, 34, 0.2);
     border-radius: 5px;
   }
-  .teal {
+  .title-text{
+    font-size: 1.5rem;
+  }  .teal {
     margin: 0px;
     margin-left: auto;
   }
+
+  .p-title {
+  
+    font-size: 1.5rem;
+  }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width:500px) {
   .project-container {
     max-width: 350px;
     grid-template-columns: 1fr;
@@ -632,18 +647,16 @@ nav {
   }
   .project-description {
     font-size: 12px;
-    
   }
   .project-card {
     padding: 0px;
     margin-bottom: 20px;
   }
-  .project-btn img {
-    height: 25px;
-    width: 25px;
-    box-shadow: 3px 2px 5px 5px rgba(35, 34, 34, 0.2);
-    border-radius: 5px;
-  }
+  /* .project-btn img {
+    height: 15px;
+    width: 15px;
+    border-radius: 3px;
+  } */
   .teal {
     margin: 0px;
     margin-left: auto;
@@ -654,6 +667,7 @@ nav {
     max-width: 300px;
     grid-gap: 5px;
   }
+ 
 }
 
 /* scroll  */
@@ -730,15 +744,8 @@ nav {
   .line_container .text2 p {
     font-size: 15px;
   }
+ 
 }
-
-/* .projectImage{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  border-radius: 3px;
-} */
 
 .project-card .project-btn {
   display: flex;
@@ -747,18 +754,8 @@ nav {
   padding-top: 10px;
 }
 
-.project-btn img {
-  height: 40px;
-  width: 40px;
-  box-shadow: 3px 2px 5px 5px rgba(35, 34, 34, 0.2);
-  border-radius: 5px;
-}
-
 .teal {
   margin: 10px;
   margin-left: auto;
 }
 
-.project-btn .projectImage {
-  margin-left: 20px;
-}

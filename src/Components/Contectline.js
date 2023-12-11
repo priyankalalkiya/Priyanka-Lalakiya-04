@@ -1,5 +1,4 @@
 import React from 'react'
-
 const Contectline = () => {
   return (
     <div className='line_container'>

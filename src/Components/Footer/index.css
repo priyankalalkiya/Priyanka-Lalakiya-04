@@ -1,0 +1,42 @@
+.footer {
+  display: flex;
+flex-direction: row;
+line-height: 2.6;
+  
+  background-color: black;
+  color: white;
+  height: 200px;
+  align-items: center;
+  justify-content: space-around;
+ flex-wrap: wrap;
+}
+
+.contact img {
+  height: 30px;
+  width: 30px;
+  margin-left: 10px;
+  margin-top: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer {
+  
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    line-height: 2.6;
+  
+  }
+
+  .pages{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .link,.img{
+    margin-left: 10px;
+  }
+
+}
