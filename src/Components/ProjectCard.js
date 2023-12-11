@@ -2,8 +2,6 @@ import React from "react";
 import ProjectData from "./ProjectData";
 import github from "../Images/githublogo.png";
 
-
-
 const ProjectCard = () => {
   return (
     <section className="backgroundStyle reveal">
