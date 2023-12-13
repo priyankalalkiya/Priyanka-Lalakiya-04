@@ -17,12 +17,6 @@
   margin-top: 30px;
 }
 
-<<<<<<< HEAD
-
-@media only screen and (max-width: 600px) {
-  .footer {
-  height: 400px;
-=======
 .phone-number {
   text-align: center;
 }
@@ -36,7 +30,6 @@
 
 @media only screen and (max-width: 600px) {
   .footer {
->>>>>>> 14be1adca46de35ea7a3bfd7c427a93e28be170a
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-around;
@@ -52,12 +45,4 @@
   .img {
     margin-left: 10px;
   }
-<<<<<<< HEAD
-
-  .phone{
-    text-align: center;
-  }
-
-=======
->>>>>>> 14be1adca46de35ea7a3bfd7c427a93e28be170a
 }

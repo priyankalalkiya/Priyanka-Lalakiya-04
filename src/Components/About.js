@@ -1,13 +1,13 @@
+import { useRef } from "react";
 import React from "react";
 import img from "../Images/my.png";
 import Reveal from "./Reveal";
 const About = () => {
 
-
   return (
     <>
     <Reveal>
-      <section className="about backgroundStyle">
+    <section id="about" className="about backgroundStyle">
         <h1 className="p-title">
           <span className="p-title-text">About Me</span>
         </h1>

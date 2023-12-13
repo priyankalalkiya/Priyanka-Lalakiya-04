@@ -1,12 +1,13 @@
-import React from "react";
+import { React , useRef } from 'react';
 import img from "../Images/img.gif";
 import Reveal from "./Reveal";
 
 const Home = () => {
+
   return (
     <Reveal>
-      <section className="backgroundStyle">
-        <div className="home">
+ <section id='hero' className="backgroundStyle">       
+  <div className="home">
           <div className="main">
             <div className="box">
               <h4 className="heygreet">Hey, I am </h4>
@@ -27,7 +28,7 @@ const Home = () => {
               <div className="btnbox">
                 <button className="resume-btn">
                   <a
-                    href="./Lalakiya_Priyanka_Resume_28_10_23.pdf"
+                    href="./Lalakiya_Priyanka_Resume.pdf"
                     download="Resume_Lalakiya_Priyanka"
                   >
                     Download Resume <i className="fa-solid fa-download"></i>

@@ -67,6 +67,7 @@ nav {
 #navbar li a:hover,
 #navbar li .active {
   color: #008080;
+  cursor: pointer;
 }
 
 #navbar li a:hover::after,
