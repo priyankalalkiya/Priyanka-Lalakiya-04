@@ -1,13 +1,12 @@
-import { React , useRef } from 'react';
+import { React, useRef } from "react";
 import img from "../Images/img.gif";
 import Reveal from "./Reveal";
 
 const Home = () => {
-
   return (
-    <Reveal>
- <section id='hero' className="backgroundStyle">       
-  <div className="home">
+ 
+      <section id="hero" className="backgroundStyle">
+        <div className="home">
           <div className="main">
             <div className="box">
               <h4 className="heygreet">Hey, I am </h4>
@@ -19,10 +18,11 @@ const Home = () => {
               </h4>
               <div className="content-text">
                 <p>
-                  hr Starting the process of developing an API-driven React
-                  website opens up a world of infinite possibilities for
-                  improving your website's functionality and providing users
-                  with real-time data and information.", demo:"url.com
+                  Passionate web developer dedicated to creating engaging and
+                  interactive experiences. Proficient in modern technologies and
+                  frameworks. Committed to continuous learning and delivering
+                  high-quality solutions. Let's build something incredible
+                  together!
                 </p>
               </div>
               <div className="btnbox">
@@ -42,7 +42,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-    </Reveal>
+ 
   );
 };
 

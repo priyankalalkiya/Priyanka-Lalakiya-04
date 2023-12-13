@@ -20,7 +20,7 @@ const Footer = () => {
       </div>
 
       <div className="pages">
-        <p className="link">Home</p>
+        <p  id="" className="link">Home</p>
         <p className="link">About</p>
         <p className="link"> Contact</p>
         <p className="link">Portfolio</p>

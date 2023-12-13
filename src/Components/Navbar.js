@@ -29,7 +29,7 @@ const Navbar = () => {
               spy={true}
               smooth={true}
               offset={-90}
-              duration={500}
+              duration={600}
               onSetActive={handleSetActive}
             >
               Home
@@ -41,7 +41,7 @@ const Navbar = () => {
               spy={true}
               smooth={true}
               offset={-80}
-              duration={500}
+              duration={600}
               onSetActive={handleSetActive}
             >
               About
@@ -53,7 +53,7 @@ const Navbar = () => {
               spy={true}
               smooth={true}
               offset={-110}
-              duration={500}
+              duration={600}
               onSetActive={handleSetActive}
             >
               Skills
@@ -65,7 +65,7 @@ const Navbar = () => {
               spy={true}
               smooth={true}
               offset={-60}
-              duration={500}
+              duration={600}
               onSetActive={handleSetActive}
             >
               Project
@@ -77,7 +77,7 @@ const Navbar = () => {
               spy={true}
               smooth={true}
               offset={-60}
-              duration={500}
+              duration={600}
               onSetActive={handleSetActive}
             >
               Contact

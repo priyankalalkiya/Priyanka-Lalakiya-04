@@ -231,6 +231,7 @@ nav {
   width: 80vh;
   text-align: justify;
   margin-top: 20px;
+  font-weight: 700;
   line-height: 1.8;
 }
 .resume-btn {
@@ -464,13 +465,15 @@ nav {
   font-size: 20px;
   font-weight: 600;
   text-decoration: underline;
+ 
 }
 
 .boxabout1 p {
   font-size: 16px;
-  line-height: 1.8;
+  line-height: 1.9;
   margin-left: 30px;
   text-align: inherit;
+  font-weight: 600;
 }
 
 .about-container {
@@ -491,6 +494,7 @@ nav {
   }
   .boxabout1 p {
     font-size: 16px;
+  
     margin-left: 30px;
   }
   .boxabout1 {
