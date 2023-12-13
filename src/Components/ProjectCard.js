@@ -1,12 +1,11 @@
 import React from "react";
 import ProjectData from "./ProjectData";
 import github from "../Images/githublogo.png";
-import Reveal from "./Reveal";
+import Reveal from "./Reveal"
 
 
 const ProjectCard = () => {
   return (
-
     <Reveal>
     <section className="backgroundStyle">
       <div className="container cnt">
