@@ -18,9 +18,10 @@ line-height: 2.6;
   margin-top: 30px;
 }
 
+
 @media only screen and (max-width: 600px) {
   .footer {
-  
+  height: 400px;
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-around;
@@ -37,6 +38,10 @@ line-height: 2.6;
 
   .link,.img{
     margin-left: 10px;
+  }
+
+  .phone{
+    text-align: center;
   }
 
 }
