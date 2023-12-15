@@ -4,7 +4,7 @@ import Reveal from "./Reveal";
 
 const Home = () => {
   return (
- 
+ <Reveal>
       <section id="hero" className="backgroundStyle">
         <div className="home">
           <div className="main">
@@ -42,6 +42,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+      </Reveal>
  
   );
 };

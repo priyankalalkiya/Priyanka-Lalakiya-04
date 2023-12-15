@@ -1,7 +1,7 @@
 .footer {
   display: flex;
   flex-direction: row;
-  line-height: 2.6;
+  line-height: 2.7;
   background-color: black;
   color: white;
   height: 300px;
@@ -27,6 +27,12 @@
   align-items: center;
   gap: 10px;
 }
+.pages{
+ cursor: pointer;
+}
+
+       
+
 
 @media only screen and (max-width: 600px) {
   .footer {
@@ -37,9 +43,10 @@
     height: auto;
     line-height: 2.6;
   }
-  .pages {
+  .pages{
     display: flex;
     flex-direction: row;
+
   }
   .link,
   .img {
