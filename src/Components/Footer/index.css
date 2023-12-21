@@ -9,23 +9,22 @@
   justify-content: space-around;
   flex-wrap: wrap;
 }
-
 .contact img {
   height: 30px;
   width: 30px;
   margin-left: 10px;
   margin-top: 30px;
 }
-
-.phone-number {
-  text-align: center;
-}
-
 .phone-email-wrapper {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 10px;
+}
+.phone-email {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 @media only screen and (max-width: 600px) {
