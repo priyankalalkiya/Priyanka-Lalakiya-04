@@ -37,6 +37,7 @@ const Contact = () => {
 
   return (
     <>
+    <section id='contact'>
       <div className="touch">
         <h1>Get In Touch</h1>
       </div>
@@ -82,6 +83,7 @@ const Contact = () => {
           </MapContainer>
         </div>
       </div>
+      </section>
     </>
   );
 };

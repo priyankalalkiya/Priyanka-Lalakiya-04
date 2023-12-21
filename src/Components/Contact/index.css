@@ -1,7 +1,9 @@
 .touch {
   padding: 5rem 0px 3rem 0px;
 }
-
+#contact{
+  height: 92vh;
+}
 .container-contact {
   display: flex;
   flex-direction: row;

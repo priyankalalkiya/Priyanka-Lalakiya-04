@@ -1,39 +1,38 @@
+import { useRef } from "react";
 import React from "react";
 import img from "../Images/my.png";
 import Reveal from "./Reveal";
 const About = () => {
-
-
   return (
     <>
-    <Reveal>
-      <section className="about backgroundStyle">
-        <h1 className="p-title">
-          <span className="p-title-text">About Me</span>
-        </h1>
-        <div className="about-container">
-          <div className="content-container">
-            <div className="boxabout0">
-              <img className="myimage" src={img} alt="Profile" />
-            </div>
-            <div className="boxabout1">
-              <p className="about-text">
-                "I am <span className="highlight">Priyanka</span> from a Latin text written by a Roman
-                Scholar, Sceptic and Philosopher by the name of Marcus Tullius
-                Cicero, who influenced the Latin language greatly. The "filler" text
-                we know today has been altered over the years. In fact, "Lorem"
-                isn't actually a Latin word. It is suggewe used real text,
-                it would possibly distract from the DESIGLatin word. It is suggested that the reason that
-                the text starts with "Lorem" is because there was a page breakething like
-                that. The reason we use Lorem Ipsum is simple. If we used real text,
-                it would possibly distN of a s us
-                to SEE the design without being distracted by readable or unrealistic text.
-                . "
-              </p>
+      <Reveal>
+        <section id="about" className="about backgroundStyle">
+          <h1 className="p-title">
+            <span className="p-title-text">About Me</span>
+          </h1>
+          <div className="about-container">
+            <div className="content-container">
+              <div className="boxabout0">
+                <img className="myimage" src={img} alt="Profile" />
+              </div>
+              <div className="boxabout1">
+                <p className="about-text">
+                 I am <span className="highlight">Priyanka</span>, a passionate web
+                  developer dedicated to crafting meaningful and engaging
+                  digital experiences. With a creative mindset and technical
+                  expertise, I bring ideas to life, ensuring they are not just
+                  functional but also aesthetically pleasing. My journey in web
+                  development is driven by a commitment to excellence and a love
+                  for problem-solving. From designing user-friendly interfaces
+                  to implementing robust backend solutions, I strive for
+                  perfection in every project. Let's collaborate and create
+                  something extraordinary that resonates with users and leaves a
+                  lasting impression in the digital realm.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
       </Reveal>
     </>
   );

@@ -7,7 +7,7 @@ import Reveal from "./Reveal"
 const ProjectCard = () => {
   return (
     <Reveal>
-    <section className="backgroundStyle">
+    <section id='project' className="backgroundStyle">
       <div className="container cnt">
         <h1 className="p-title">
           <span className="p-title-text">My Projects</span>

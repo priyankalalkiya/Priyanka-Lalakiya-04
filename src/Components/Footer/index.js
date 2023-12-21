@@ -3,6 +3,7 @@ import github from "../../Images/githubfooter.png";
 import skype from "../../Images/skype.png";
 import { FaPhone } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import { Link } from "react-scroll";
 import "./index.css";
 
 const Footer = () => {
@@ -20,15 +21,63 @@ const Footer = () => {
       </div>
 
       <div className="pages">
-        <p className="link">Home</p>
-        <p className="link">About</p>
-        <p className="link"> Contact</p>
-        <p className="link">Portfolio</p>
-      </div>
+       
+    <p>    <Link
+            id=""
+            className="link"
+            to="hero"
+            spy={true}
+            smooth={true}
+            offset={-90}
+            duration={600}
+          >
+            Home
+          </Link></p>  
+     <p>    <Link
+            className="link"
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={-90}
+            duration={600}
+          >
+            About
+          </Link></p> 
+
+    <p>      <Link
+            className="link"
+            to="skill"
+            spy={true}
+            smooth={true}
+            offset={-90}
+            duration={600}
+          >
+            Portfolio
+          </Link></p>
+     
+  
+      
+          <Link
+            className="link"
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-90}
+            duration={600}
+          >
+            Contact
+          </Link>
+        </div>
+      
 
       <div className="contact">
-        <img className="img" src={linkedin} alt="LinkedIn" />
-        <img className="img" src={github} alt="GitHub" />
+        <a href="https://www.linkedin.com/in/priyanka-lalakiya/" target="_blank" rel="noopener noreferrer">
+          <img className="img" src={linkedin} alt="LinkedIn" />
+        </a>
+        <a href="https://github.com/priyankalalkiya" target="_blank" rel="noopener noreferrer">
+          <img className="img" src={github} alt="GitHub" />
+        </a>
+        
         <img className="img" src={skype} alt="Skype" />
       </div>
     </div>

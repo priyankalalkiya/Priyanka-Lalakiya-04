@@ -16,29 +16,27 @@ const ProjectData = [
     imgsrc: pro1,
     title: "News Website",
     description:
-      "Starting the process of developing an API-driven React website opens up a world of infinite possibilities for improving your website's functionality and providing users with real-time data and information.",
+      "Starting the process of developing an API-driven React website opens up a world of infinite possibilities for improving your website's functionality and providing users with real-time data and information",
     language: [reactLogo,bts]
   },
   {
     imgsrc: pro0,
     title: "inoteBook",
     description:
-      "Starting the process of developing an API-driven React website opens up a world of infinite possibilities for improving your website's functionality and providing users with real-time data and information.",
-    language: [reactLogo, mongo ,node , express, bts]
+    "I led the design and development of a state-of-the-art MERN stack-driven full-stack note-taking online application.This transformed note-taking and administration with unmatched effectiveness.", 
+     language: [reactLogo, mongo ,node , express, bts]
   },
   {
     imgsrc: pro2,
     title: "Inventory Management System",
-    description:
-      "Starting the process of developing an API-driven React website opens up a world of infinite possibilities for improving your website's functionality and providing users with real-time data and information.",
+    description:"Invented a dynamic billing system that generates invoices automatically, improving accuracy, minimizing errors, and providing a superior customer experience.",
     language: [phpLogo, sqlLogo,bts]
   },
   {
     imgsrc: pro5,
     title: "Food Delivery Website",
     description:
-      "Starting the process of developing an API-driven React website opens up a world of infinite possibilities for improving your website's functionality and providing users with real-time data and information.",
-      language: [phpLogo, sqlLogo]
+    "Developed a secure and user-friendly authentication system that streamlines the login and registration process for improved user convenience and data security.",    language: [phpLogo, sqlLogo]
   },
 
 ];
