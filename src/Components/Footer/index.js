@@ -11,7 +11,7 @@ const Footer = () => {
     <div className="footer">
       <div className="phone-email">
         <div className="phone-email-wrapper">
-          <FaPhone size={20} className="phone-image"/>
+          <FaPhone size={20} className="phone-image" />
           <p className="phone-number">+91 9016038425</p>
         </div>
         <div className="phone-email-wrapper">
@@ -21,8 +21,9 @@ const Footer = () => {
       </div>
 
       <div className="pages">
-       
-    <p>    <Link
+        <p>
+          {" "}
+          <Link
             id=""
             className="link"
             to="hero"
@@ -32,8 +33,11 @@ const Footer = () => {
             duration={600}
           >
             Home
-          </Link></p>  
-     <p>    <Link
+          </Link>
+        </p>
+        <p>
+          {" "}
+          <Link
             className="link"
             to="about"
             spy={true}
@@ -42,9 +46,12 @@ const Footer = () => {
             duration={600}
           >
             About
-          </Link></p> 
+          </Link>
+        </p>
 
-    <p>      <Link
+        <p>
+          {" "}
+          <Link
             className="link"
             to="skill"
             spy={true}
@@ -53,31 +60,37 @@ const Footer = () => {
             duration={600}
           >
             Portfolio
-          </Link></p>
-     
-  
-      
-          <Link
-            className="link"
-            to="contact"
-            spy={true}
-            smooth={true}
-            offset={-90}
-            duration={600}
-          >
-            Contact
           </Link>
-        </div>
-      
+        </p>
+
+        <Link
+          className="link"
+          to="contact"
+          spy={true}
+          smooth={true}
+          offset={-90}
+          duration={600}
+        >
+          Contact
+        </Link>
+      </div>
 
       <div className="contact">
-        <a href="https://www.linkedin.com/in/priyanka-lalakiya/" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://www.linkedin.com/in/priyanka-lalakiya/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img className="img" src={linkedin} alt="LinkedIn" />
         </a>
-        <a href="https://github.com/priyankalalkiya" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://github.com/priyankalalkiya"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img className="img" src={github} alt="GitHub" />
         </a>
-        
+
         <img className="img" src={skype} alt="Skype" />
       </div>
     </div>
