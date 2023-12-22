@@ -57,7 +57,7 @@ const Footer = () => {
      
   
       
-          <Link
+    <p>      <Link
             className="link"
             to="contact"
             spy={true}
@@ -66,7 +66,7 @@ const Footer = () => {
             duration={600}
           >
             Contact
-          </Link>
+          </Link></p>
         </div>
       
 
