@@ -56,9 +56,10 @@ textarea {
 }
 
 .flat-button {
+  padding: 10px;
   background-color: #008080;
   color: white;
-  letter-spacing: 2px;
+  letter-spacing: 1.6px;
   font-size: 16px;
   float: left;
   border-radius: 5px;
@@ -135,6 +136,18 @@ textarea {
   }
   .form-text {
     font-size: 1rem;
+  }
+  .flat-button {
+    padding: 8px;
+    font-size: 14px;
+    height: 42px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .flat-button {
+    padding: 6px;
+    font-size: 13px;
+    height: 40px;
   }
 }
 @media screen and (max-width: 400px) {

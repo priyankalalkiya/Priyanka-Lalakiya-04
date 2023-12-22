@@ -11,7 +11,7 @@ const Footer = () => {
     <div className="footer">
       <div className="phone-email">
         <div className="phone-email-wrapper">
-          <FaPhone size={20} />
+          <FaPhone size={20} className="phone-image"/>
           <p className="phone-number">+91 9016038425</p>
         </div>
         <div className="phone-email-wrapper">

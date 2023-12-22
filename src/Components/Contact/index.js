@@ -7,10 +7,9 @@ import L from "leaflet";
 
 const Contact = () => {
   const refForm = useRef();
-
   const customIcon = L.icon({
-    iconUrl: require("./popup.png"),
-    iconSize: [38, 38],
+    iconUrl: require("../../Images/Location1.png"),
+    iconSize: [25, 35],
   });
 
   const sendEmail = (e) => {
@@ -74,9 +73,8 @@ const Contact = () => {
         </div>
 
         <div className="map">
-          <MapContainer center={[22.3331, 70.8134]} zoom={13}>
+          <MapContainer center={[22.3331, 70.8134]} zoom={13} scrollWheelZoom={false}>
             <TileLayer
-              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
               url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
             <Marker position={[22.3331, 70.8134]} icon={customIcon}>
