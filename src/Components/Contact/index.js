@@ -14,7 +14,6 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    console.log("Sending email...");
     emailjs
       .sendForm(
         "service_fu601ed",
@@ -24,7 +23,6 @@ const Contact = () => {
       )
       .then(
         (response) => {
-          console.log("Email sent successfully:", response);
           alert("Email sent successfully!");
           window.location.reload(false);
         },
@@ -37,52 +35,59 @@ const Contact = () => {
 
   return (
     <>
-    <section id='contact'>
-      <div className="touch">
-        <h1>Get In Touch</h1>
-      </div>
-      <div className="container-contact">
-        <div className="contact-form">
-          <h2 className="form-text">
-            Please fill this form
-          </h2>
-          <form ref={refForm} onSubmit={sendEmail}>
-            <ul>
-              <li className="half">
-                <input type="text" name="name" placeholder="Name" required />
-              </li>
-              <li className="half">
-                <input type="email" name="email" placeholder="Email" required />
-              </li>
+      <section id="contact">
+        <div className="touch">
+          <h1 className="p-title">
+            <span className="p-title-text">Contact Me</span>
+          </h1>
+        </div>
+        <div className="container-contact">
+          <div className="contact-form">
+            <h2 className="form-text">Please fill this form</h2>
+            <form ref={refForm} onSubmit={sendEmail}>
+              <ul>
+                <li className="half">
+                  <input type="text" name="name" placeholder="Name" required />
+                </li>
+                <li className="half">
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                    required
+                  />
+                </li>
+                <li>
+                  <textarea
+                    name="message"
+                    placeholder="Message"
+                    required
+                  ></textarea>
+                </li>
+              </ul>
               <li>
-                <textarea
-                  name="message"
-                  placeholder="Message"
-                  required
-                ></textarea>
+                <input
+                  type="submit"
+                  className="flat-button"
+                  value="Send Message"
+                />
               </li>
-            </ul>
-            <li>
-              <input
-                type="submit"
-                className="flat-button"
-                value="Send Message"
-              />
-            </li>
-          </form>
-        </div>
+            </form>
+          </div>
 
-        <div className="map">
-          <MapContainer center={[22.3331, 70.8134]} zoom={13} scrollWheelZoom={false}>
-            <TileLayer
-              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-            />
-            <Marker position={[22.3331, 70.8134]} icon={customIcon}>
-              <Popup>R.K. University, Rajkot</Popup>
-            </Marker>
-          </MapContainer>
+          <div className="map">
+            <MapContainer
+              center={[22.3331, 70.8134]}
+              zoom={13}
+              scrollWheelZoom={false}
+            >
+              <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+              <Marker position={[22.3331, 70.8134]} icon={customIcon}>
+                <Popup>R.K. University, Rajkot</Popup>
+              </Marker>
+            </MapContainer>
+          </div>
         </div>
-      </div>
       </section>
     </>
   );
