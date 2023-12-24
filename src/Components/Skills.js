@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { skills } from "./SkillsData";
-import Reveal from "./Reveal";
 
 const Container = styled.div`
   display: flex;
@@ -110,7 +109,6 @@ const SkillImage = styled.img`
 
 const Skills = () => {
   return (
-    <Reveal>
     <Container id="skill" className="backgroundStyle">
       <Wrapper>
         <h1 className="title-text"> My Skills</h1>
@@ -133,7 +131,6 @@ const Skills = () => {
         </SkillsContainer>
       </Wrapper>
     </Container>
-    </Reveal>
   );
 };
 

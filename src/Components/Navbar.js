@@ -10,10 +10,6 @@ const Navbar = () => {
     setClicked(!clicked);
   };
 
-  const handleSetActive = (to) => {
-    console.log(to);
-  };
-
   return (
     <nav className={`sticky-nav ${clicked ? "active" : ""}`}>
       <div className="logo-container">
@@ -24,13 +20,11 @@ const Navbar = () => {
         <ul id="navbar" className={clicked ? "active" : ""}>
           <li>
             <Link
-              className="active"
               to="hero"
               spy={true}
               smooth={true}
               offset={-90}
               duration={600}
-              onSetActive={handleSetActive}
             >
               Home
             </Link>
@@ -42,7 +36,6 @@ const Navbar = () => {
               smooth={true}
               offset={-80}
               duration={600}
-              onSetActive={handleSetActive}
             >
               About
             </Link>
@@ -54,7 +47,6 @@ const Navbar = () => {
               smooth={true}
               offset={-110}
               duration={600}
-              onSetActive={handleSetActive}
             >
               Skills
             </Link>
@@ -66,7 +58,6 @@ const Navbar = () => {
               smooth={true}
               offset={-60}
               duration={600}
-              onSetActive={handleSetActive}
             >
               Project
             </Link>
@@ -78,7 +69,6 @@ const Navbar = () => {
               smooth={true}
               offset={-60}
               duration={600}
-              onSetActive={handleSetActive}
             >
               Contact
             </Link>

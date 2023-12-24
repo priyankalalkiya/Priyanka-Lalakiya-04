@@ -1,13 +1,10 @@
 import React from "react";
 import ProjectData from "./ProjectData";
 import github from "../Images/githublogo.png";
-import Reveal from "./Reveal"
-
 
 const ProjectCard = () => {
   return (
-    <Reveal>
-    <section id='project' className="backgroundStyle">
+    <section id="project" className="backgroundStyle">
       <div className="container cnt">
         <h1 className="p-title">
           <span className="p-title-text">My Projects</span>
@@ -20,26 +17,22 @@ const ProjectCard = () => {
               <div className="project-description">
                 <p>{project.description}</p>
                 <div className="project-btn">
-                
-                   { project.language.map((lang, langIndex) => (
-                      <img
-                        key={langIndex}
-                        className="projectImage"
-                        src={lang}
-                        alt={`Language ${langIndex}`}
-                      />
-                    ))}
-                
-                  <img src={github} className="teal" alt="img" /> </div>
-               
+                  {project.language.map((lang, langIndex) => (
+                    <img
+                      key={langIndex}
+                      className="projectImage"
+                      src={lang}
+                      alt={`Language ${langIndex}`}
+                    />
+                  ))}
+                  <img src={github} className="teal" alt="img" />{" "}
+                </div>
               </div>
             </div>
           ))}
         </div>
       </div>
     </section>
-    </Reveal>
-  
   );
 };
 
