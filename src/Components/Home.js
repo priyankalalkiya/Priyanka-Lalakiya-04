@@ -1,15 +1,25 @@
-import { React, useRef } from "react";
-import img from "../Images/img.gif";
+import { motion } from 'framer-motion';
+import React from 'react';
+import img from '../Images/img.gif';
 
 const Home = () => {
+
+
   return (
-    <section id="hero" className="backgroundStyle">
+    <section
+      id="hero"
+      className="backgroundStyle"
+     
+    >
       <div className="home">
         <div className="main">
-          <div className="box">
+          <div
+            className="box"
+            
+          >
             <h4 className="heygreet">Hey, I am </h4>
             <p data-text="Priyanka" className="name style">
-              Priyanka Lalakiya{" "}
+              Priyanka Lalakiya
             </p>
             <h4 className="animation">
               <span></span>
