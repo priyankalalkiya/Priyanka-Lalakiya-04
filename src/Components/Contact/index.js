@@ -14,7 +14,6 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    console.log("Sending email...");
     emailjs
       .sendForm(
         "service_fu601ed",
@@ -24,7 +23,6 @@ const Contact = () => {
       )
       .then(
         (response) => {
-          console.log("Email sent successfully:", response);
           alert("Email sent successfully!");
           window.location.reload(false);
         },
@@ -38,9 +36,9 @@ const Contact = () => {
   return (
     <>
     <section id='contact'>
-  
-        <h1 className="touch">Get In <span className="span-touch">Touch</span></h1>
-     
+      <div className="touch">
+        <h1>Get In Touch</h1>
+      </div>
       <div className="container-contact">
         <div className="contact-form">
           <h2 className="form-text">
@@ -72,17 +70,19 @@ const Contact = () => {
           </form>
         </div>
 
-        <div className="map">
-          <MapContainer center={[22.3331, 70.8134]} zoom={13} scrollWheelZoom={false}>
-            <TileLayer
-              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-            />
-            <Marker position={[22.3331, 70.8134]} icon={customIcon}>
-              <Popup>R.K. University, Rajkot</Popup>
-            </Marker>
-          </MapContainer>
+          <div className="map">
+            <MapContainer
+              center={[22.3331, 70.8134]}
+              zoom={13}
+              scrollWheelZoom={false}
+            >
+              <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+              <Marker position={[22.3331, 70.8134]} icon={customIcon}>
+                <Popup>R.K. University, Rajkot</Popup>
+              </Marker>
+            </MapContainer>
+          </div>
         </div>
-      </div>
       </section>
     </>
   );

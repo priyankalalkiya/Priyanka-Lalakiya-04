@@ -151,6 +151,20 @@ textarea {
     height: 230px;
     width: 300px;
   }
+  input[type=text],
+  input[type=email] {
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    padding: 8px;
+  }
+  textarea {
+    width: 100%;
+    height: 100px;
+    resize: vertical;
+    padding: 8px;
+    font-size: 16px;
+  }
   .form-text {
     font-size: 1rem;
   }

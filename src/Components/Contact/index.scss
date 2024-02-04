@@ -4,28 +4,27 @@
 }
 
 .touch {
-  padding: 5rem 0px 3rem 0px;
+  padding: 1rem 0px 1rem 0px;
 }
-
 .container-contact {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
+<<<<<<< HEAD
   padding-bottom: 10px;
+=======
+>>>>>>> 23e7f623ddb75aef0e180cfe70d3c80470e49f3b
 }
-
 .contact-form {
   width: 500px;
   margin: 50px 20px 0px 100px;
 }
-
 ul {
   padding: 0;
   margin: 0;
 }
-
 li {
   padding: 0;
   margin: 0;
@@ -36,12 +35,10 @@ li {
   position: relative;
   clear: both;
 }
-
 li .half {
   width: 100%;
   float: left;
 }
-
 input[type="text"],
 input[type="email"] {
   width: 100%;
@@ -49,7 +46,6 @@ input[type="email"] {
   font-size: 16px;
   padding: 10px;
 }
-
 textarea {
   width: 100%;
   height: 100px;
@@ -57,7 +53,6 @@ textarea {
   padding: 10px;
   font-size: 16px;
 }
-
 .flat-button {
   padding: 10px;
   background-color: #008080;
@@ -69,17 +64,16 @@ textarea {
   height: 50px;
   margin-bottom: 20px;
 }
-
 .leaflet-container {
   height: 400px;
   width: 500px;
 }
-
 .touch {
 text-align: center;
 position: relative;
 font-size: 2rem;
 }
+<<<<<<< HEAD
 
 .touch::before{
   content: '';
@@ -93,6 +87,8 @@ font-size: 2rem;
 .span-touch{
   color: #008080;
 }
+=======
+>>>>>>> 23e7f623ddb75aef0e180cfe70d3c80470e49f3b
 .form-text {
   margin-bottom: 15px;
   font-size: 1.5rem;
@@ -110,7 +106,6 @@ font-size: 2rem;
     width: 450px;
   }
 }
-
 @media screen and (max-width:1050px){
   .container-contact {
     flex-direction: column-reverse;
@@ -126,7 +121,6 @@ font-size: 2rem;
     width: 500px;
   }
 }
-
 @media screen and (max-width:900px){
   .contact-form {
     width: 400px;
@@ -151,6 +145,20 @@ font-size: 2rem;
   .leaflet-container {
     height: 230px;
     width: 300px;
+  }
+    input[type="text"],
+    input[type="email"] {
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    padding: 8px;
+  }
+  textarea {
+    width: 100%;
+    height: 100px;
+    resize: vertical;
+    padding: 8px;
+    font-size: 16px;
   }
   .form-text {
     font-size: 1rem;
