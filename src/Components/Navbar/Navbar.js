@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-scroll";
 import { useState } from "react";
-import logo from "../Images/1logo.jpg";
-
+import logo from "../../Images/1logo.jpg";
+import './Navbar.css'
 const Navbar = () => {
   const [clicked, setClicked] = useState(false);
 

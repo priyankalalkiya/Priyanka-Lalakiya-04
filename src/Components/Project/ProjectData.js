@@ -1,14 +1,14 @@
-import pro1 from "../Images/download.jpg";
-import pro2 from "../Images/pro4.png";
-import pro0 from "../Images/pro1.png";
-import pro5 from "../Images/pro5.png";
-import mongo from "../Images/mongologo.jpeg";
-import reactLogo from "../Images/reactlogo.png";
-import phpLogo from "../Images/phplogo.png";
-import sqlLogo from "../Images/mysqllogo.png";
-import node from "../Images/nodejs logo.png";
-import express from "../Images/expresslogo.png";
-import bts from "../Images/btlogo.png";
+import pro1 from "../../Images/download.jpg";
+import pro2 from "../../Images/pro4.png";
+import pro0 from "../../Images/pro1.png";
+import pro5 from "../../Images/pro5.png";
+import mongo from "../../Images/mongologo.jpeg";
+import reactLogo from "../../Images/reactlogo.png";
+import phpLogo from "../../Images/phplogo.png";
+import sqlLogo from "../../Images/mysqllogo.png";
+import node from "../../Images/nodejs logo.png";
+import express from "../../Images/expresslogo.png";
+import bts from "../../Images/btlogo.png";
 
 
 const ProjectData = [

@@ -38,9 +38,9 @@ const Contact = () => {
   return (
     <>
     <section id='contact'>
-      <div className="touch">
-        <h1>Get In Touch</h1>
-      </div>
+  
+        <h1 className="touch">Get In <span className="span-touch">Touch</span></h1>
+     
       <div className="container-contact">
         <div className="contact-form">
           <h2 className="form-text">

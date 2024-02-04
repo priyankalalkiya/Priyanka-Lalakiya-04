@@ -1,14 +1,16 @@
-import { useRef } from "react";
+
 import React from "react";
-import img from "../Images/my.png";
+import img from "../../Images/my.png";
+import './About.css'
+
 const About = () => {
   return (
     <>
         <section id="about" className="about backgroundStyle">
-          <h1 className="p-title">
-            <span className="p-title-text">About Me</span>
+          <h1 className="about-title">
+            About <span className="me">Me</span>
           </h1>
-          <div className="about-container">
+        
             <div className="content-container">
               <div className="boxabout0">
                 <img className="myimage" src={img} alt="Profile" />
@@ -29,7 +31,7 @@ const About = () => {
                 </p>
               </div>
             </div>
-          </div>
+  
         </section>
     </>
   );

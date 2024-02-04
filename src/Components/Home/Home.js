@@ -1,17 +1,15 @@
-import { motion } from 'framer-motion';
 import React from 'react';
-import img from '../Images/img.gif';
+import img from '../../Images/img.gif';
+import './Home.css'
 
 const Home = () => {
-
 
   return (
     <section
       id="hero"
       className="backgroundStyle"
-     
     >
-      <div className="home">
+     
         <div className="main">
           <div
             className="box"
@@ -48,7 +46,7 @@ const Home = () => {
             <img className="image" src={img} alt="" />
           </div>
         </div>
-      </div>
+  
     </section>
   );
 };

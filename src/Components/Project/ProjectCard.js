@@ -1,14 +1,15 @@
 import React from "react";
 import ProjectData from "./ProjectData";
-import github from "../Images/githublogo.png";
+import github from "../../Images/githublogo.png";
+import './Project.css'
 
 const ProjectCard = () => {
   return (
     <section id="project" className="backgroundStyle">
       <div className="container cnt">
-        <h1 className="p-title">
-          <span className="p-title-text">My Projects</span>
-        </h1>
+       
+          <h1 className="project-top">My <span className="me">Projects</span></h1>
+     
         <div className="project-container">
           {ProjectData.map((project, index) => (
             <div className="project-card" key={index}>

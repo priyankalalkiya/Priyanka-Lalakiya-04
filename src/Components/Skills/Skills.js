@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { skills } from "./SkillsData";
+import './Skills.css'
 
 const Container = styled.div`
   display: flex;
@@ -71,6 +72,7 @@ const SkillTitle = styled.h2`
   @media (max-width: 500px) {
     font-size: 20px;
   }
+
 `;
 
 const SkillList = styled.div`
@@ -83,7 +85,7 @@ const SkillList = styled.div`
 
 const SkillItem = styled.div`
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 600;
   color: ${({ theme }) => theme.text_primary + 80};
   border: 1px solid black;
   border-radius: 12px;
@@ -92,6 +94,7 @@ const SkillItem = styled.div`
   align-items: center;
   justify-content: center;
   gap: 8px;
+  
   @media (max-width: 768px) {
     font-size: 14px;
     padding: 8px 10px;
@@ -100,20 +103,20 @@ const SkillItem = styled.div`
     font-size: 14px;
     padding: 6px 10px;
   }
+
 `;
 
 const SkillImage = styled.img`
   width: 24px;
   height: 24px;
+  
 `;
 
 const Skills = () => {
   return (
     <Container id="skill" className="backgroundStyle">
       <Wrapper>
-        <h1 className="title-text"> My Skills</h1>
-        {/* <Desc>Here are some of my skills on which I have been working on for the past 2 years.
-        </Desc> */}
+        <h1 className="skill-title"> My <span className="span">Skills</span></h1>
         <SkillsContainer>
           {skills.map((skill) => (
             <Skill>

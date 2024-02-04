@@ -1,0 +1,18 @@
+.skill-title{
+    font-size: 2rem;
+    position: relative;
+}
+
+.skill-title::before{
+    content: '';
+    width: 75px;
+    position: absolute;
+    bottom: -10px;
+    height: 2.5px;
+    background-color: #008080;
+    transform: translateX(50%);
+}
+
+.span{
+    color: #008080;
+}
