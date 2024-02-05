@@ -65,12 +65,12 @@ nav {
   #navbar li a:hover::after,
   #navbar li a.active::after {
     content: "";
-    width: 50%;
-    height: 2.5px;
+    width: 40%;
+    height: 3.5px;
     background-color: #008080;
     position: absolute;
     bottom: -2px;
-    left: 20px;
+    left: 30px;
   }
   #mobile {
     display: none;
