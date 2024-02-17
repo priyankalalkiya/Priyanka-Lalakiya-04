@@ -1,142 +1,136 @@
 #about {
   height: 100%;
- padding-top:1rem ;
-  }
-  .content-container {
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  .about-title {
-    position: relative;
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-    margin-top: 2.5rem;
+  padding-top: 1rem;
 }
-
-.me{
-    color: #008080;
+.content-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
- 
+.about-title {
+  position: relative;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  margin-top: 2.5rem;
+}
+.me {
+  color: #008080;
+}
 .about-title::before {
-    content: '';
-    width: 75px;
-    position: absolute;
-    bottom: -10px;
-    height: 2.5px;
-    background-color: #008080;
-    transform: translateX(50%);
+  content: "";
+  width: 75px;
+  position: absolute;
+  bottom: -10px;
+  height: 2.5px;
+  background-color: #008080;
+  transform: translateX(50%);
 }
-.about-text{
+.about-text {
   font-weight: 500;
 }
 
-  .boxabout0 {
-    padding: 10px;
-  }
-  .boxabout1 {
-    padding: 55px;
-  }
-  .boxabout0 img {
+.boxabout0 {
+  padding: 10px;
+}
+.boxabout1 {
+  padding: 55px;
+}
+.boxabout0 img {
+  height: auto;
+  border-radius: 10px;
+}
+.boxabout1 {
+  text-align: justify;
+  width: 80vh;
+  height: 100%;
+}
+.highlight {
+  color: #008080;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.boxabout1 p {
+  font-size: 16px;
+  line-height: 1.9;
+  margin-left: 30px;
+  text-align: inherit;
+  font-weight: 600;
+}
+
+.about-container {
+  text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .myimage {
+    width: 500px;
     height: auto;
-    border-radius: 10px;
   }
-  .boxabout1 {
-    text-align: justify;
-    width: 80vh;
-    height: 100%;
-  }
-  .highlight {
-    color: #008080;
-    font-size: 20px;
-    font-weight: 600;
-    text-decoration: underline;
-  }
-  
   .boxabout1 p {
     font-size: 16px;
-    line-height: 1.9;
-    margin-left: 30px;
-    text-align: inherit;
-    font-weight: 600;
-  }
-  
-  .about-container {
-    text-align: center;
-  }
-  
 
-  @media screen and (max-width: 1200px) {
-    .myimage {
-      width: 500px;
-      height: auto;
-    }
-    .boxabout1 p {
-      font-size: 16px;
-  
-      margin-left: 30px;
-    }
-    .boxabout1 {
-      padding: 40px;
-    }
-    .boxabout1 .about-text {
-      margin: 0px;
-    }
+    margin-left: 30px;
   }
-  
-  @media screen and (max-width: 1030px) {
-    .about {
-      margin-top: 4rem;
-    }
-    .content-container {
-      margin: 0px 1rem 1rem 1rem;
-    }
+  .boxabout1 {
+    padding: 40px;
   }
-  
-  @media screen and (max-width: 850px) {
-    .myimage {
-      width: 450px;
-    }
+  .boxabout1 .about-text {
+    margin: 0px;
   }
-  
-  @media screen and (max-width: 770px) {
-    .myimage {
-      width: 400px;
-    }
-    .boxabout1 {
-      padding: 50px;
-    }
+}
+@media screen and (max-width: 1030px) {
+  .about {
+    margin-top: 4rem;
   }
-  
-  @media screen and (max-width: 530px) {
-    .about {
-      padding-top: 3rem;
-    }
-    .boxabout1 {
-      padding: 10px;
-    }
-    .myimage {
-      width: 300px;
-    }
-    .boxabout1 p {
-      margin-left: 0px;
-      padding: 0px 5px 0px 5px;
-      font-size: 10px;
-    }
+  .content-container {
+    margin: 0px 1rem 1rem 1rem;
   }
-  
-  @media screen and (max-width: 390px) {
-    .about {
-      margin-top: 0rem;
-    }
-    .myimage {
-      width: 280px;
-    }
-    .boxabout1 p {
-      font-size: 12px;
-    }
+}
+
+@media screen and (max-width: 850px) {
+  .myimage {
+    width: 450px;
   }
+}
+
+@media screen and (max-width: 770px) {
+  .myimage {
+    width: 400px;
+  }
+  .boxabout1 {
+    padding: 50px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .about {
+    padding-top: 3rem;
+  }
+  .boxabout1 {
+    padding: 10px;
+  }
+  .myimage {
+    width: 300px;
+  }
+  .boxabout1 p {
+    margin-left: 0px;
+    padding: 0px 5px 0px 5px;
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .about {
+    margin-top: 0rem;
+  }
+  .myimage {
+    width: 280px;
+  }
+  .boxabout1 p {
+    font-size: 12px;
+  }
+}

@@ -103,7 +103,6 @@ nav {
       margin-left: 50px;
     }
   }
-  
   @media screen and (max-width: 1050px) {
     #navbar {
       display: flex;
@@ -144,7 +143,6 @@ nav {
       cursor: pointer;
     }
   }
-  
   @media screen and (max-width: 600px) {
     nav {
       padding: 20px;
@@ -187,4 +185,3 @@ nav {
       left: 70px;
     }
   }
-  
