@@ -1,6 +1,7 @@
 #about {
   height: 100%;
   padding-top: 1rem;
+  padding-bottom: 3.5rem;
 }
 .content-container {
   display: flex;
@@ -14,7 +15,6 @@
   text-align: center;
   font-size: 2rem;
   margin-bottom: 1.5rem;
-  margin-top: 2.5rem;
 }
 .me {
   color: #008080;

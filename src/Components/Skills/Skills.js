@@ -50,14 +50,15 @@ const SkillsContainer = styled.div`
 const Skill = styled.div`
   width: 100%;
   max-width: 500px;
-  border: 1px solid black;
-  border-radius: 16px;
+  border: 0.9px solid black;
+  border-radius: 18px;
   padding: 18px 36px;
   background-color: white;
   @media (max-width: 768px) {
     max-width: 400px;
     padding: 10px 36px;
   }
+  box-shadow: 1px 4px 4px 4px rgba(47, 45, 45, 0.3);
   @media (max-width: 500px) {
     max-width: 300px;
     padding: 10px 30px;

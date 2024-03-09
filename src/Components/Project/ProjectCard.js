@@ -27,7 +27,14 @@ const ProjectCard = () => {
                       alt={`Language ${langIndex}`}
                     />
                   ))}
-                  <img src={github} className="teal" alt="img" />{" "}
+                  <div className="git">
+                  <a
+          href={project.githubLink}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+                  <img src={github} className="teal" alt="img" />{" "}</a>
+                  </div>
                 </div>
               </div>
             </div>

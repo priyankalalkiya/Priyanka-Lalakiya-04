@@ -22,7 +22,7 @@
   text-align: center;
   font-size: 1.5rem;
   font-weight: bold;
-  padding: 20px;
+  padding: 10px;
 }
 
 .project-title-text {
@@ -71,12 +71,14 @@
   font-size: 14px;
   line-height: 25px;
 }
-
+.project-description p{
+  padding-left: 1.4rem;
+  padding-right: 1.5rem;
+  text-align: justify
+}
 .project-card:hover .project-description {
   transform: translateY(0);
   transition: 0.5s ease-in-out;
-
- 
 }
 .project-card:hover{
   cursor: pointer;
@@ -85,10 +87,6 @@
   background-color: rgb(2, 1, 1);
   filter: blur(1px);
 }
-.project-card .project-btn {
-  display: flex;
-}
-
 .project-btn img {
   height: 40px;
   width: 40px;
@@ -99,14 +97,16 @@
 .project-btn .projectImage {
   margin-left: 20px;
 }
+.git{
+  position: absolute;
+  right: 20px;
+}
 
 .project-card .project-btn {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding-top: 10px;
 }
-
 
 .teal {
   margin: 10px;
@@ -131,7 +131,6 @@
     font-size: 30px;
   }
   .project-description {
-    height: 160px;
     font-size: 15px;
   }
   .project-card {
@@ -139,8 +138,8 @@
     margin-bottom: 20px;
   }
   .project-btn > img {
-    height: 25px;
-    width: 25px;
+    height: 30px;
+    width: 30px;
     box-shadow: 3px 2px 5px 5px rgba(35, 34, 34, 0.2);
     border-radius: 5px;
   }
@@ -152,16 +151,33 @@
 
 @media screen and (max-width: 500px) {
   .project-container {
+ 
     max-width: 350px;
     grid-template-columns: 1fr;
     grid-gap: 10px;
     margin-bottom: 20px;
   }
   .project-title {
+  padding-top: 5px;
     font-size: 17px;
+    padding-bottom: 0px;
   }
-  .project-description {
+  .project-description, .project-card {
     font-size: 12px;
+    height: 150px;
+  }
+
+.project-btn > img {
+  height: 20px;
+  width: 20px;
+  box-shadow: 3px 2px 5px 5px rgba(35, 34, 34, 0.2);
+  border-radius: 5px;
+}
+  .project-description p{
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 10px;
+    line-height: 17px;
   }
   .project-card {
     padding: 0px;

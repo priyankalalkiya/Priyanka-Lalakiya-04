@@ -179,6 +179,10 @@ textarea {
     font-size: 13px;
     height: 40px;
   }
+  .touch{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
 }
 @media screen and (max-width: 400px) {
   .contact-form {
