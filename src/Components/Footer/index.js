@@ -59,7 +59,21 @@ const Footer = () => {
             offset={-90}
             duration={600}
           >
-            Portfolio
+            Skills
+          </Link>
+        </p>
+
+        <p>
+          {" "}
+          <Link
+            className="link"
+            to="project"
+            spy={true}
+            smooth={true}
+            offset={-60}
+            duration={600}
+          >
+            Projects
           </Link>
         </p>
 
@@ -90,11 +104,16 @@ const Footer = () => {
         >
           <img className="img" src={github} alt="GitHub" />
         </a>
-
-        <img className="img" src={skype} alt="Skype" />
+        <a
+          href="https://join.skype.com/invite/pWCBfCavXC2w"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+        <img className="img" src={skype} alt="Skype" />   </a>
       </div>
     </div>
   );
 };
 
 export default Footer;
+

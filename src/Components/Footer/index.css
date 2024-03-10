@@ -9,6 +9,7 @@
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
+  font-family: "Lora", serif;
 }
 .contact img {
   height: 30px;

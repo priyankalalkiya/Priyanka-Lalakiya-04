@@ -1,12 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Popines;
 }
-p,h1,h2,h3,h4,span,a{
+p,a{
   font-family: Poppins;
+}
+h1,h2,h3,h4,span{
+  font-family: "Lora", serif;
 }
 
 /* scroll */
