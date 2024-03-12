@@ -30,7 +30,7 @@ const Footer = () => {
             spy={true}
             smooth={true}
             offset={-90}
-            duration={600}
+            duration={800}
           >
             Home
           </Link>
@@ -43,7 +43,7 @@ const Footer = () => {
             spy={true}
             smooth={true}
             offset={-90}
-            duration={600}
+            duration={800}
           >
             About
           </Link>
@@ -57,7 +57,7 @@ const Footer = () => {
             spy={true}
             smooth={true}
             offset={-90}
-            duration={600}
+            duration={800}
           >
             Skills
           </Link>
@@ -71,7 +71,7 @@ const Footer = () => {
             spy={true}
             smooth={true}
             offset={-60}
-            duration={600}
+            duration={800}
           >
             Projects
           </Link>
@@ -83,7 +83,7 @@ const Footer = () => {
           spy={true}
           smooth={true}
           offset={-90}
-          duration={600}
+          duration={800}
         >
           Contact
         </Link></p>

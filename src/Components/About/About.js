@@ -1,7 +1,8 @@
 
 import React from "react";
-import img from "../../Images/my.png";
+import img from "../../Images/myimage.jpg";
 import './About.css'
+import Reveal from "../Home/Reveal";
 const About = () => {
   return (
     <> <section id="about" className="about backgroundStyle">
@@ -9,9 +10,11 @@ const About = () => {
             About <span className="me">Me</span>
           </h1>    
             <div className="content-container">
+              <Reveal>
               <div className="boxabout0">
                 <img className="myimage" src={img} alt="Profile" />
-              </div>
+              </div></Reveal>
+              <Reveal>
               <div className="boxabout1">
                 <p className="about-text">
                  I am <span className="highlight">Priyanka</span>, a passionate web
@@ -27,6 +30,7 @@ const About = () => {
                   lasting impression in the digital realm.
                 </p>
               </div>
+              </Reveal>
             </div>
         </section>
     </>

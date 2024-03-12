@@ -32,6 +32,26 @@
  cursor: pointer;
 }
 
+.pages a {
+  position: relative;
+  text-decoration: none; 
+}
+
+.pages a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #008080;
+  transition: width 0.3s ease; 
+  color: #008080;
+}
+
+.pages a:hover::after {
+  width: 100%;
+}
 
 @media only screen and (max-width: 600px) {
   .footer {

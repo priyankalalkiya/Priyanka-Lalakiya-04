@@ -62,7 +62,7 @@ nav {
     cursor: pointer;
   }
   
-  #navbar li a:hover::after,
+  /* #navbar li a:hover::after,
   #navbar li a.active::after {
     content: "";
     width: 40%;
@@ -71,7 +71,8 @@ nav {
     position: absolute;
     bottom: -2px;
     left: 30px;
-  }
+  } */
+  
   #mobile {
     display: none;
   }

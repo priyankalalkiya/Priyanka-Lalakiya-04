@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { skills } from "./SkillsData";
 import './Skills.css'
+import Reveal from "../Home/Reveal";
 
 const Container = styled.div`
   display: flex;
@@ -119,6 +120,7 @@ const Skills = () => {
     <Container id="skill" className="backgroundStyle">
       <Wrapper>
         <h1 className="skill-title"> My <span className="span">Skills</span></h1>
+        <Reveal>
         <SkillsContainer>
           {skills.map((skill) => (
             <Skill>
@@ -134,6 +136,7 @@ const Skills = () => {
             </Skill>
           ))}
         </SkillsContainer>
+        </Reveal>
       </Wrapper>
     </Container>
   );
